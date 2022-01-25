@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Application text
+
+ @author Martin Denham [mjdenham at gmail dot com]
+-->
+<resources>
+    <string name="app_name_short">Bible Study</string>
+    <string name="app_name_medium">Bible Study (And Bible)</string>
+    <string name="app_name_long">Bible Study app, by And Bible Open Source Project</string>
+    <string name="project">And Bible Open Source Project</string>
+
+    <string name="version_text">Version %s</string>
+    <string name="no_sdcard_error">Please insert an SD card and restart application.</string>
+
+    <!-- Main menu -->
+    <string name="menu">Menu</string>
+    <string name="chooseBook">Document</string>
+    <string name="selectPassage">Passage</string>
+    <string name="search">Find</string>
+    <string name="search_with_results">Find (%s results)</string>
+    <string name="settings">Application preferences</string>
+    <string name="history">History</string>
+    <string name="speak">Speak</string>
+    <string name="help">Help</string>
+    <string name="information">Information</string>
+    <string name="other">Other</string>
+    <string name="contact">Contact</string>
+    <string name="help_and_tips">Help &amp; tips</string>
+    <string name="administration">Administration</string>
+    <string name="rate_application">Rate &amp; Review</string>
+    <string name="chooce_document">Choose Document</string>
+
+    <!-- Passage navigation -->
+    <string name="choosePassageBookName">Choose Book</string>
+    <string name="choosePassageChapterName">Choose Chapter</string>
+    <string name="choosePassageVerseName">Choose Verse</string>
+    <string name="bible">Bible</string>
+    <string name="deuterocanonical">Deuterocanonical</string>
+
+    <!--  Search -->
+    <string name="search_index">Search Index</string>
+    <string name="index_creation_required">An index is required to search.</string>
+    <string name="create_index_for">An index is required to search. \n\nCreate index for %s?</string>
+    <string name="rebuild_index_for">Rebuild index for %s?</string>
+    <string name="indexing_wait_msg">When indexing has completed you will be taken to the search screen.</string>
+    <string name="index_create">Create</string>
+    <string name="rebuild_index">Rebuild index</string>
+    <string name="search_in">Find in %s</string>
+    <string name="do_in_background">Continue in background</string>
+    <string name="rebuild_index_button">Rebuild</string>
+
+    <!-- Tasks -->
+    <string name="progress_status">Progress</string>
+    <string name="task_kill_warning">These long running tasks may terminate if you switch to another application before they finish.</string>
+    <string name="no_tasks_running">There are no tasks currently being executed.</string>
+
+    <!-- Search -->
+    <string name="search_words_group_prompt">Find verses</string>
+    <string name="search_all_words">All words</string>
+    <string name="search_any_word">Any word</string>
+    <string name="search_phrase">Phrase</string>
+    <string name="search_result_count">%d matches found</string>
+    <string name="search_showing_first">Too many matches.  Showing first %d</string>
+    <string name="search_bible_section_group_prompt">Search Where</string>
+    <string name="search_all_bible">Whole Bible</string>
+    <string name="search_new_testament">New Testament</string>
+    <string name="search_old_testament">Old Testament</string>
+    <string name="search_current_book">Current book</string>
+    <string name="error_executing_search">Invalid search query</string>
+
+    <!-- Preferences -->
+    <string name="prefs_show_verseno_title">Chapter &amp; verse numbers</string>
+    <string name="prefs_show_verseno_summary">Show chapter &amp; verse numbers</string>
+
+    <string name="prefs_e_ink_mode_title">Black &amp; white mode</string>
+    <string name="prefs_eink_mode_summary">Use application in monochrome mode (no colors), making it more suitable for E-ink devices.</string>
+
+    <string name="prefs_disable_animations_title">Disable animations</string>
+    <string name="prefs_disable_animations_summary">Disable various animations such as smooth scrolling. </string>
+
+    <string name="prefs_paragraph_spacing_title">Paragraph spacing (%s mm)</string>
+    <string name="prefs_paragraph_spacing_summary">Adjust space between paragraphs.</string>
+
+    <string name="prefs_show_verseno_title1">Verse numbers</string>
+
+    <string name="prefs_show_chapter_no_title">Chapter numbers</string>
+    <string name="prefs_show_chapter_no_summary">Show chapter numbers</string>
+
+    <string name="prefs_verse_per_line_summary">Show each verse on a different line</string>
+    <string name="prefs_show_bookmarks_summary">Untick to hide all bookmarks</string>
+
+    <string name="prefs_show_mynotes_summary">Show icon in verses with My Note</string>
+    <string name="prefs_show_notes_summary">Show footnotes and cross-references</string>
+    <string name="prefs_show_strongs_summary">Links to Greek &amp; Hebrew definitions</string>
+    <string name="prefs_show_morphology_summary">Show Robinson\'s Greek morphology</string>
+    <string name="prefs_section_title_summary">Show non-canonical section titles</string>
+    <string name="prefs_red_letter_summary">Show words of Christ in red</string>
+    <string name="prefs_text_size_title">Font preferences</string>
+
+    <string name="prefs_verse_per_line_title">One verse per line</string>
+    <string name="prefs_show_bookmarks_title">Show bookmarks</string>
+    <string name="prefs_show_mynotes_title">Show My Note icons</string>
+    <string name="prefs_show_footnotes_title">Footnotes</string>
+    <string name="prefs_show_xrefs_title">Cross references</string>
+    <string name="prefs_show_footnotes_summary">Show footnotes, if they are available in the document</string>
+    <string name="prefs_show_xrefs_summary">Show cross references, if they are available in the document</string>
+
+    <string name="prefs_show_notes_title">Footnotes and x-refs</string>
+    <string name="prefs_show_strongs_title">Strong\'s numbers</string>
+    <string name="prefs_show_morphology_title">Morphological codes</string>
+    <string name="prefs_section_title_title">Section titles</string>
+    <string name="prefs_red_letter_title">Red Letter</string>
+    <string name="prefs_tilt_to_scroll_title">Tilt to scroll</string>
+
+    <string name="prefs_toolbar_button_action_title">Action for toolbar button press</string>
+    <string name="prefs_toolbar_button_action_summary">Action to take when pressing/long-pressing Bible or Commentary toolbar buttons</string>
+    <string name="prefs_toolbar_button_action_default">Press to open menu, long press for documents screen (default)</string>
+    <string name="prefs_toolbar_button_action_swap_menu">Press to open next document, long press to open menu</string>
+    <string name="prefs_toolbar_button_action_swap_activity">Press to open next document, long press for documents screen</string>
+
+    <string name="prefs_night_mode_title">Night mode switching</string>
+    <string name="prefs_night_mode_summary">Whether to switch to night mode automatically (if device supports), manually or via system setting (Android 10+). Manual switching can be done from the 3-dot options menu on the main screen. </string>
+    <string name="prefs_night_mode_manual">Manual</string>
+    <string name="prefs_night_mode_automatic">Automatic</string>
+    <string name="prefs_night_mode_system">System</string>
+    <string name="options_menu_night_mode">Night mode</string>
+
+    <string name="prefs_navigate_to_verse_title">Navigate to verse</string>
+    <string name="prefs_navigate_to_verse_summary">Choose verse (and chapter) when selecting a passage</string>
+    <string name="prefs_open_links_in_special_window_title">Links window</string>
+    <string name="prefs_open_links_in_special_window_summary">Open links in special window, for quicker display of cross-references and Strongs</string>
+    <string name="prefs_text_size_sample_text">Sample text</string>
+    <string name="prefs_screen_keep_on_title">Keep screen on</string>
+    <string name="prefs_screen_keep_on_summary">Prevent screen sleeping while using this app</string>
+    <string name="prefs_interface_locale_title">Application language</string>
+    <string name="prefs_interface_locale_summary">Select custom user interface language</string>
+    <string name="reset_fontsize">Reset</string>
+
+    <string name="prefs_request_sdcard_permission_title">Manually installed documents exist</string>
+    <string name="prefs_request_sdcard_permission_summary">Enable use of manually installed documents from the jsword/sword folder on internal storage</string>
+
+    <string name="all_text_options_window_menutitle">All text options</string>
+    <string name="text_options_window_menutitle">Text options</string>
+    <string name="auto_fullscreen">Fullscreen by scrolling</string>
+    <string name="reversed_split_mode">Reversed split mode</string>
+
+    <string name="add_ellipsis">%s…</string>
+
+    <string name="font_size_pt">%d pt</string>
+    <string name="value_mm">%d mm</string>
+    <string name="auto_fullscreen_summary">Switch automatically to fullscreen when scrolling text. Tip: you can always also switch to full screen by doubletapping screen.</string>
+    <string name="prefs_margin_size_title">Change margin size</string>
+    <string name="prefs_margin_size_mm_title">Margin size (%d/%d/%d mm)</string>
+    <string name="prefs_advanced_settings_cat">Advanced settings</string>
+    <string name="prefs_display_customization_cat">Look &amp; feel</string>
+    <string name="prefs_behavior_customization_cat">Application behavior</string>
+
+    <string name="prefs_margin_size_summary">Adjust left and right margin of the text view. You can also
+        adjust maximum width of the text.
+    </string>
+    <string name="prefs_text_colors_summary">Adjust text and background colors and noise effect</string>
+    <string name="text_display_settings_activity_title">Text display settings</string>
+    <string name="workspace_text_display_settings_title">Text options - %s</string>
+    <string name="window_text_display_settings_title">Text options - Window %d</string>
+    <string name="prefs_text_display_settings_title">Formatting</string>
+    <string name="prefs_text_appearance_title">Appearance</string>
+
+    <string name="prefs_justify_title">Justify-align text</string>
+    <string name="prefs_justify_summary">Align text in \'justify\' style, meaning left and right margins of the text are in line</string>
+    <string name="pref_left_margin_label_mm">Left margin (%d mm)</string>
+    <string name="pref_right_margin_label_mm">Right margin (%d mm)</string>
+    <string name="pref_maximum_width_of_text_label_mm">Maximum width of text (%d mm)</string>
+    <string name="prefs_line_spacing_pt">Line spacing %1.1fx</string>
+    <string name="pref_font_family_label">Font family</string>
+    <string name="prefs_top_margin_title">Top margin</string>
+    <string name="prefs_top_margin_summary">Add margin (with visual indication) to top of the window that contains Bible document. Bible is scrolled so that current verse starts below the margin.</string>
+    <string name="prefs_hyphenation_title">Hyphenation</string>
+    <string name="prefs_hyphenation_summary">Automatically hyphenate words, if language is supported</string>
+    <string name="prefs_line_spacing_pt_title">Line spacing (%1.1fx)</string>
+    <string name="line_spacing_title">Line spacing</string>
+    <string name="line_spacing_summary">Set the space between lines</string>
+    <string name="select_none">Select none</string>
+    <string name="reset_are_you_sure">Are you sure that you want to reset all of these values?</string>
+    <string name="window_pinning_menutitle">Window pinning</string>
+    <string name="hide_window_buttons_title">Hide window buttons</string>
+    <string name="hide_window_buttons_summary">Window buttons that are displayed on right side of the Bible views are hidden. Window navigation bar on the bottom is still displayed and you may open window popup menu by long-clicking them.</string>
+    <string name="hide_bible_reference_overlay_title">Hide Bible reference overlay</string>
+    <string name="hide_bible_reference_overlay_summary">Do not show the semi-transparent Bible reference overlay when app is in fullscreen mode</string>
+
+    <string name="full_screen_hide_buttons_pref_title">Hide window button bar in fullscreen</string>
+    <string name="full_screen_hide_buttons_pref_summary">When switching to fullscreen mode, hide automatically window button bar that is on the bottom of the screen</string>
+
+    <string name="prefs_dictionaries_cat">Dictionaries</string>
+    <string name="choose_strongs_greek_dictionary_title">Strongs Greek dictionary</string>
+    <string name="choose_strongs_greek_dictionary_summary">Choose Strongs dictionary for Greek word definitions</string>
+    <string name="choose_strongs_hebrew_dictionary_title">Strongs Hebrew dictionary</string>
+    <string name="choose_strongs_hebrew_dictionary_summary">Choose Strongs dictionary for Hebrew word definitions</string>
+    <string name="choose_strongs_greek_morphology_title">Robinson Greek morphology</string>
+    <string name="choose_strongs_greek_morphology_summary">Choose dictionary for Robinson Greek morphology definitions</string>
+
+    <string name="prefs_top_margin_title_mm">Top margin (%d mm)</string>
+    <string name="font_size_title">Font size</string>
+    <string name="font_size_title_pt">Font size (%d pt)</string>
+    <string name="prefs_font_text_size_summary">Adjust main text font size</string>
+
+    <string name="pref_font_family_label_name">Font family (%s)</string>
+    <string name="prefs_font_family_summary">Change font family. Tip: more fonts can be installed via Download Documents / Add-ons.</string>
+
+    <string name="prefs_text_bookmarks_title">Bookmark &amp; My Notes settings</string>
+
+    <!-- Colors preferences -->
+    <string name="prefs_text_colors_menutitle">Color settings</string>
+    <string name="window_color_settings_title">Window color settings</string>
+    <string name="workspace_color_settings_title">Workspace color setting defaults</string>
+
+    <string name="color_text">Text color</string>
+    <string name="color_background">Background color</string>
+    <string name="colors_day_mode_title">Day mode</string>
+    <string name="colors_night_mode_title">Night mode</string>
+    <string name="prefs_noise_title">Background noise</string>
+    <string name="prefs_noise_summary">Adding some noise to background might make it more comfortable to eyes. </string>
+
+    <string name="cpv_default_title">Select a Color</string>
+    <string name="cpv_presets">Presets</string>
+    <string name="cpv_custom">Custom</string>
+    <string name="cpv_select">Select</string>
+    <string name="cpv_transparency">Transparency</string>
+
+    <!-- Window -->
+    <string name="new_window">New window</string>
+    <string name="windowClose">Close</string>
+    <string name="windowMaximise">Maximise</string>
+    <string name="windowMinimise">Minimise</string>
+    <string name="windowSynchronise">Synchronise</string>
+    <string name="move_window">Move to</string>
+    <string name="move_window_to_position2">Position %d (%s:%s)</string>
+    <string name="copy_settings">Copy settings to</string>
+    <string name="copy_settings_to_workspace">Workspace</string>
+    <string name="copy_settings_to_window">Window %d (%s: %s)</string>
+    <string name="change_to_normal">Change to normal window</string>
+    <string name="window_pin_mode">Pin</string>
+
+    <!-- Notes screen -->
+    <string name="no_chapter_notes">No notes exist in this chapter</string>
+    <string name="no_verse_notes">No notes exist in this verse</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <!--  Strongs -->
+    <string name="strongs_not_installed">Please download Strong\'s Hebrew and Greek dictionaries</string>
+    <string name="no_indexed_bible_with_strongs_ref">You must download a Bible containing Strong\'s numbers and download its index via Search</string>
+    <string name="morph_robinson_not_installed">Please download \'Robinson\'s Morphological Analysis Codes\' dictionary</string>
+    <string name="go_to_downloads">Go to Downloads</string>
+
+    <!-- Module download -->
+    <string name="download">Download Documents</string>
+    <string name="redownload">Redownload Documents</string>
+    <string name="download_confirmation">Download a Bible from the Internet?</string>
+    <string name="download_source_last_updated">Document lists last updated: %s.</string>
+    <string name="download_refreshing_book_list">Refreshing list of available documents from document servers…</string>
+    <string name="download_source_message1">Documents are downloaded from the following sources:</string>
+    <string name="download_document_confirm_prefix">Download</string>
+    <string name="download_refresh_book_list_menu_item">Refresh</string>
+    <string name="error_downloading">An error occurred while downloading.  Please check your internet connection.</string>
+    <string name="error_downloading_status">The server which hosts %s returned an error due to %s (%d).</string>
+    <string name="storage_space_warning">Insufficient local storage space.</string>
+    <string name="too_many_jobs">Too many tasks are running.  Please wait for some to finish and try again.</string>
+    <string name="document_not_installed">Please download \'%s\'</string>
+    <string name="free_text_search_documents">Search</string>
+    <string name="chooce_language_hint">Language</string>
+    <string name="one_more_back_press">Press back again to close the app</string>
+    <string name="document_filter_results">%d documents</string>
+    <string name="download_question_title">Do you want to proceed to download documents?</string>
+    <string name="download_question_message">If you live in a persecuted country,
+        you might need to be careful about downloading christian material via Internet.
+        Instead, you might want to obtain module zip files more securely and install them
+        via "Load Documents From Zip". Are you sure you want to proceed with downloading?
+        All downloads from module servers are encrypted (HTTPS).
+    </string>
+    <string name="do_not_ask_again">Yes, do not ask any more</string>
+    <string name="recommended_document">Recommended!</string>
+    <string name="about_version_history">Version history: %s</string>
+    <string name="download_errors">Download errors</string>
+    <string name="failed_repositories_message">Could not connect to the following document server: \n\n%s\n\n</string>
+    <string name="failed_downloads_message">The following files could not be downloaded:\n\n%s\n\n</string>
+
+    <!--  Install zip file -->
+    <string name="install_zip">Load Document From Zip</string>
+    <string name="install_zip_module">Install Bible Module</string>
+    <string name="install_zip_successfull">Module was installed successfully</string>
+    <string name="extracting_zip_file">Extracting Zip file now…</string>
+    <string name="checking_zip_file">Checking given file…</string>
+    <string name="invalid_module">File does not contain a valid SWORD module</string>
+    <string name="install_zip_title">Please wait. Loading Zip file.</string>
+    <string name="overwrite_files">Following files already exists: %s Overwrite?</string>
+    <string name="overwrite_files_title">Overwrite files?</string>
+
+    <!-- Daily Reading Plan -->
+    <string name="rdg_plan_title">Reading Plan</string>
+    <string name="rdg_plan_selector_title">Choose a Reading Plan</string>
+    <string name="rdg_plan_day">Day %s</string>
+    <string name="rdg_plan_set_start_date">Set Start Date…</string>
+    <string name="set_current_day">Set as current day…</string>
+    <string name="msg_set_current_day_reading_plan">This will set today as the current day in this plan and mark all previous days as read. Continue?</string>
+    <string name="done">Done</string>
+    <string name="reset_plan_question">Are you sure you want to reset this plan?</string>
+    <string name="import_reading_plan">Import reading plan…</string>
+    <string name="import_reading_plan_error">Error on import</string>
+    <string name="import_reading_plan_error_duplicate">The following days were duplicate: %s</string>
+    <string name="import_reading_plan_error_days">The following days contained errors: %s</string>
+    <string name="import_reading_plan_anyway">Import anyway</string>
+    <string name="overwrite_reading_plan">Do you want to overwrite %s?</string>
+    <string name="delete_reading_plan">Delete this plan</string>
+    <string name="reading_plan_deleted">The reading plan has been deleted</string>
+    <string name="reading_plan_ships_with_ab">This reading plan ships with %s</string>
+    <string name="confirm_delete_reading_plan">
+        Are you sure you want to delete %s along with it\'s reading history?
+        Hint: if you need to update the plan then you can just import it again with the same filename
+        and the history will be preserved.
+    </string>
+    <string name="plan_duplicate_user_plan">
+        There is a user reading plan in sdcard
+        jsword/readingplan with the same name as an internal plan. It can not be listed here.
+        Please rename the file to something else, leaving it\'s file extension as .properties
+    </string>
+    <string name="plan_name_y1ntpspr">NT, Psalms &amp; Proverbs in a Year</string>
+    <string name="plan_description_y1ntpspr">
+        Courtesy of HEARTLIGHT Internet Magazine,
+        http://www.heartlight.org, permission granted
+    </string>
+    <string name="plan_name_y1ot1nt1_chronological">Chronological 1-Year through Bible</string>
+    <string name="plan_description_y1ot1nt1_chronological">
+        Plan based on chronological events in the Bible.
+        The chronological time-line is approximate.
+    </string>
+    <string name="plan_name_y1ot1nt1_OTandNT">1-Year OT+NT Simultaneously</string>
+    <string name="plan_description_y1ot1nt1_OTandNT">
+        Read through the Bible in 1 year, with chapters
+        in the OT and NT every day.
+    </string>
+    <string name="plan_name_y1ot1nt1_OTthenNT">1-Year through Bible</string>
+    <string name="plan_description_y1ot1nt1_OTthenNT">
+        Read through the Bible in 1 year, starting in Genesis
+        and finishing in Revelation. The OT is first, then the NT.
+    </string>
+    <string name="plan_name_y1ot1nt2_mcheyne">M\'Cheyne 1-Year 4-chapter/day</string>
+    <string name="plan_description_y1ot1nt2_mcheyne">
+        This plan is based on the M’Cheyne reading system,
+        featuring four different readings for use in both family and personal devotions. Each day has
+        two passages from the Old Testament, one from the New Testament, and one from either the Psalms or the Gospels. In one year,
+        you read the Old Testament once and the New Testament and Psalms twice.
+    </string>
+    <string name="plan_name_y1ot6nt4_profHorner">Prof. Horner 10-chapter/day Reading Plan</string>
+    <string name="plan_description_y1ot6nt4_profHorner">Courtesy of Prof. Horner, permission granted</string>
+    <string name="plan_name_y2ot1ntps2">2-Year Through Bible, NT+PS twice</string>
+    <string name="plan_description_y2ot1ntps2">
+        Read through the Bible in 2 years, reading the NT and Psalms twice.
+        Courtesy of Wholesome Words,  http://www.wholesomewords.org/, permission granted
+    </string>
+
+    <!-- Document context menu -->
+    <string name="delete">Delete</string>
+    <string name="delete_index">Delete search index</string>
+    <string name="about">About</string>
+    <string name="delete_doc">Delete %s?</string>
+    <string name="delete_search_index_doc">Delete index of %s?</string>
+
+    <!-- Verse context menu -->
+    <string name="notes">Footnotes and references</string>
+    <string name="share_verse">Share…</string>
+    <string name="share_verse_widget_title">Share selection</string>
+    <string name="share_verse_subject_2">A Bible verse has been shared with you using %s.</string>
+    <string name="compare_translations">Compare translations</string>
+
+    <!-- Link context menu -->
+    <string name="open_link_in_this_window">Open link here</string>
+    <string name="open_link_in_new_window">Open link in new window</string>
+    <string name="open_link_in_special_window">Open link in special window</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmarks_and_mynotes_title">Bookmarks &amp; My Notes</string>
+    <string name="migrated_my_notes">Migrated My Notes</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="bookmark_added">Bookmark added</string>
+    <string name="manage_labels">Manage Labels</string>
+    <string name="assign_labels">Assign labels</string>
+    <string name="new_item">New</string>
+    <string name="new_label">New Label</string>
+    <string name="label_name_prompt">Name</string>
+    <string name="label_unlabelled">Unlabelled</string>
+    <string name="add_bookmark1">Bookmark</string>
+    <string name="add_bookmark2">Bookmark Selection</string>
+    <string name="add_bookmark3">Selection</string>
+    <string name="add_bookmark_whole_verse">Bookmark Verse</string>
+    <string name="add_bookmark_whole_verse1">Verses</string>
+    <string name="add_bookmark_whole_verse2">Full verses</string>
+    <string name="remove_bookmark">Remove</string>
+    <string name="bookmark_settings_hide_labels_title">Hide specified labels</string>
+    <string name="bookmark_settings_hide_labels_summary">Hide bookmarks that are marked with specified label(s)</string>
+    <string name="auto_assign_labels_title">Label settings</string>
+    <string name="auto_assign_labels">Auto-assign &amp; Favourite labels</string>
+    <string name="auto_assign_labels1">Auto-assign label to new bookmarks</string>
+    <string name="auto_assign_labels_primary">Auto-assign as primary</string>
+    <string name="label_color">Label color</string>  <!-- can be removed -->
+    <string name="label_color_example">Example</string>
+
+    <!--  Sort orders used for Bookmarks and MyNotes -->
+    <string name="sort_by_date">Date order</string>
+    <string name="sort_by_bible_book">Biblical order</string>
+    <string name="sort_by_alphabetical">Alphabetical order</string>
+    
+    <!-- Dictionary -->
+    <string name="dictionary">Dictionary</string>
+    <string name="search_dictionary_hint">Search dictionary</string>
+
+    <!-- General Book -->
+    <string name="general_book">Book</string>
+
+    <!-- Speak -->
+    <!-- plurals tags referencing the below have been moved to untranslated_strings.xml -->
+    <!-- Speak - Bible -->
+    <string name="one_chapter">%d chapter</string>
+    <string name="some_chapters">%d chapters</string>
+    <string name="rest_of_book">To end of book</string>
+    <!-- Speak - Commentary -->
+    <string name="one_verse">%d verse</string>
+    <string name="some_verses">%d verses</string>
+    <string name="rest_of_chapter">To end of chapter</string>
+    <!-- Speak - Dictionary and other -->
+    <string name="one_page">%d page</string>
+    <string name="some_pages">%d pages</string>
+    <!-- Speak - Common -->
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="rewind">Rewind</string>
+    <string name="forward">Forward</string>
+    <string name="tts_lang_not_available">Language is not available.</string>
+    <string name="speak_queue">Queue</string>
+    <string name="speak_repeat">Repeat</string>
+
+    <!-- Speak - Bible -->
+    <string name="speak_speed_title">Speak speed</string>
+    <string name="speak_and_play_earcons_title">Speak and play earcon sounds for</string>
+    <string name="playback_settings_title">Playback Settings</string>
+    <string name="speak_settings_title">General Speak Settings</string>
+    <string name="speak_bookmarking_settings_title">Bookmarking Settings</string>
+    <string name="speak_bookmarks_menu_title">Speak from bookmark</string>
+    <string name="speak_advanced_settings">Advanced Settings</string>
+    <string name="speak_sleep_timer_title">Sleep timer</string>
+
+    <string name="speak_no_books_available">No books available to speak</string>
+    <string name="speak_general_error">Speak could not be started for this book</string>
+
+    <string name="repeat_passage">Repeat passage</string>
+    <string name="set_repeat_passage_range">Set repeat passage range</string>
+    <string name="speak_beginning_of_passage">Choose beginning of passage</string>
+    <string name="speak_ending_of_passage">Choose ending of passage</string>
+    <string name="speak_verse_range_to_repeat">Choose verse range to repeat</string>
+    <string name="speak_ending_verse_must_be_later">Ending verse must be later than starting verse</string>
+
+    <string name="conf_speak_synchronize">Text follows speech</string>
+    <string name="conf_speak_auto_bookmark">Automatic bookmarking</string>
+    <string name="conf_save_playback_settings_to_bookmarks">Save playback settings to bookmarks</string>
+    <string name="conf_replace_divinename">Replace divine name with Yahweh</string>
+    <string name="conf_change_chapter">Chapter changes</string>
+    <string name="conf_change_title">Titles</string>
+    <string name="conf_speak_footnotes">Footnotes</string>
+    <string name="conf_speak_sleep_timer">Set sleep timer</string>
+
+    <string name="sleep_timer_title">Sleep time in minutes</string>
+    <string name="sleep_timer_set">Set sleep timer. Timer set: %d minutes</string>
+    <string name="sleep_timer_started">Sleep timer started, %d minutes</string>
+    <string name="sleep_timer_active_at">Sleep timer: %s minutes left.</string>
+
+    <string name="speak_next">Next</string>
+    <string name="speak_previous">Previous</string>
+    <string name="widget_toggle_sleep_timer">Toggle sleep timer</string>
+    <string name="widget_bookmark_helptext">Speak bookmarks shortcut buttons will appear here.</string>
+    <string name="speak_status_stopped">stopped</string>
+    <string name="speak_autobookmarking_disabled">Autobookmarking disabled!</string>
+    <string name="system_speak_settings">Open system TTS settings</string>
+
+    <string name="auto_assing_labels_help1">Here you can adjust which labels are assigned automatically to bookmarks that you create. </string>
+
+    <!-- parameter is ether setting_scope_window or setting_scope_workspace -->
+    <string name="setting_scope">This setting applies to %s.</string>
+    <string name="setting_scope_window">this window</string>
+    <string name="setting_scope_workspace">this workspace</string>
+
+    <string name="assing_labels_help1">Each bookmark can be assigned multiple labels. </string>
+    <!-- param is bookmark icon -->
+    <string name="assing_labels_help2">Use %s to specify which label color is shown.</string>
+    <!-- param is auto-assign label icon -->
+    <string name="assing_labels_help3">Tap %s icon to have that label is assigned automatically to new bookmarks.</string>
+    <!-- param is heart icon -->
+    <string name="assing_labels_help4">Tap %s to add label to your favourite list for quick access.</string>
+
+    <!-- param is refresh icon -->
+    <string name="assing_labels_help5">Tap %s to re-order the list based on your selections.</string>
+
+    <string name="workspace_text_options_help_title">Workspace text options</string>
+    <string name="workspace_text_options_help1">These settings determine the default for all workspace windows.</string>
+    <string name="workspace_text_options_help2">You can override these by changing the individual window settings.</string>
+
+    <string name="window_text_options_help_title">Window text options</string>
+    <!-- Parameter is actual icon -->
+    <string name="window_text_options_help1">%s icon indicates that the setting comes from the workspace settings.</string>
+    <!-- Parameter is actual icon -->
+    <string name="window_text_options_help2">%s icon indicates that this setting has been changed for this specific window.</string>
+    <string name="window_text_options_help3">The workspace setting will not affect this window.</string>
+
+    <!-- First parameter is actual icon. Second parameter is either "default values" or "workspace default values" -->
+    <string name="text_options_reset_help">Use %s button to reset all these settings back to %s.</string>
+    <string name="reset_defaults">default values</string>
+    <string name="reset_workspace_defaults">workspace default values</string>
+
+    <string name="speak_bookmark_help">Speak bookmark help</string>
+
+    <string name="speak_help_auto_bookmark">
+        A Speak bookmark will be automatically added when Speak is paused or stopped.
+        Automatically generated bookmarks are labelled with the special Speak label.
+        If you start at a Speak bookmark the bookmark will be moved to the verse you
+        stop or pause at next time. Only Speak labels will be moved, any other labels
+        will be left alone.
+    </string>
+    <string name="speak_help_playback_settings">
+        Special playback settings (under \"Playback Settings\" on the Speak screen)
+        are saved to Speak bookmarks when this setting is selected.
+        When you restart speaking from a Speak bookmark, the saved playback settings
+        are loaded from the bookmark.
+    </string>
+    <string name="speak_help_playback_settings_example">
+        For example if you are listening to Genesis and Romans and
+        wish to listen to Genesis spoken quickly without chapter change notifications,
+        but to Romans more slowly with audible earcon sounds on chapter changes, then
+        you can have different playback settings for these books,
+        when these settings are saved to the corresponding bookmarks.
+    </string>
+
+    <!-- List of (max 5) words that will be searched and replaced by their counterpart in divinename_replace
+         if they are found in <divineName> tag in the document (i.e. LORD etc, in capital letters).
+
+         Please note that this is not translation but you need to think about what words need to be replaced
+         in your language. These will be used if "Replace divinename with Yahweh" feature is enabled
+         in speak settings. -->
+    <string-array name="speak_divinename_original">
+        <item>Lord</item>
+        <item>God</item>
+        <item/>
+        <item/>
+        <item/>
+    </string-array>
+    <!-- List of (max 5) words that we will replace those words listed in divinename_original.
+
+         Please note that this is not translation but you need to think about what words need to be replaced
+         in your language. These will be used if "Replace divinename with Yahweh" feature is enabled
+         in speak settings. -->
+    <string-array name="speak_divinename_replace">
+        <item>Yahweh</item>
+        <item>Yahweh</item>
+        <item/>
+        <item/>
+        <item/>
+    </string-array>
+
+    <string name="speak_book_changed">Book changed.</string>
+    <string name="speak_chapter_changed">Chapter</string>
+    <string name="speak_first">First</string>
+    <string name="speak_second">Second</string>
+    <string name="speak_third">Third</string>
+    <string name="speak_fourth">Fourth</string>
+    <string name="speak_fifth">Fifth</string>
+
+    <string name="verse_range_mode_disabled">
+        Repeat passage mode was disabled automatically because
+        speaking was started outside of defined verse range.
+    </string>
+
+    <!-- User Notes -->
+    <string name="mynotes">My Notes</string>
+
+    <!-- Backup and restore -->
+    <string name="backup_and_restore">Backup &amp; Restore</string>
+    <string name="backup_modules">Share or Backup Documents to…</string>
+    <string name="backup_app_database">Share or Backup app database to…</string>
+
+    <string name="backup_app">Share or Backup app (.apk file) to …</string>
+
+    <!-- What items (study pads, bookmarks etc) user wants to restore from app db backup file? -->
+    <string name="restore_what">What do you want to restore?</string>
+
+    <string name="restore_app_database">Restore app database from…</string>
+    <string name="restore_database">Restore Database File</string>
+    <string name="restore_confirmation">Overwrite My Notes, Bookmarks, Study Pads, Reading Plans and Workspaces?</string>
+    <string name="reading_plans_plural">Reading Plans</string>
+    <string name="restore_success">My Notes, Bookmarks, Study Pads, Reading Plans and Workspaces restored successfully</string>
+    <string name="loading_backup">Loading database from backup…</string>
+    <string name="backup_success2">My Notes, Bookmarks, Study Pads, Reading Plans and Workspaces backed up successfully.</string>
+    <string name="backup_modules_success">Selected modules backed up successfully.</string>
+
+    <string name="backup_modules_email_subject_2">%s modules backup</string>
+    <string name="backup_modules_email_message_2">Attached is your %s modules backup, which contains the following modules: %s</string>
+
+    <string name="backup_email_subject_2">%s database backup</string>
+    <string name="backup_email_message_2">Your %s database containing bookmarks, notes, reading plans and workspaces is attached</string>
+    <string name="restore_unsuccessfull">Restoring database was unsuccessful. Perhaps you gave invalid database file.</string>
+    <string name="backup_phone_storage">Phone storage</string>
+    <string name="backup_backup_title">Backup to where?</string>
+    <string name="backup_backup_message">Backup to phone or elsewhere via Share function (email, Google Drive etc.)?</string>
+    <string name="backup_share">Share</string>
+    <string name="restore_modules">Restore Documents from…</string>
+    <string name="send_backup_file">Send a backup file</string>
+    <string name="backup_modules_title">Select which modules to backup</string>
+    <string name="install_zip_canceled">Module install cancelled</string>
+
+    <!-- About -->
+    <string name="module_about_copyright">Copyright: %s</string>
+    <string name="module_about_installed_version">Installed version: %s (%s)</string>
+    <string name="module_about_latest_version">Latest version: %s (%s)</string>
+    <string name="module_about_versification">Versification: %s</string>
+    <string name="module_about_repository">Distribution server: %s</string>
+    <string name="module_about_osisId">OSIS ID: %s</string>
+
+    <!-- Bug reporting -->
+    <string name="send_bug_report_title1">Bug report</string>
+    <string name="send_feedback_title">Feedback</string>
+    <string name="send_bug_report_title">Feedback / bug report</string>
+    <string name="report_bug_email_subject_3">[%s] Bug report for %s %s</string>
+
+    <string name="report_bug_big_heading">PLEASE WRITE YOUR FEEDBACK OR BUG REPORT ABOVE THIS LINE</string>
+    <string name="report_bug_heading1">Instructions:</string>
+    <string name="report_bug_line_1">Tell us briefly what did you do / what happened when issue took place.</string>
+    <string name="report_bug_heading2">For example:</string>
+    <string name="report_bug_instructions1">1. Opened app</string>
+    <string name="report_bug_instructions2">2. Clicked window menu</string>
+    <string name="report_bug_instructions3">-> Crash</string>
+    <string name="report_bug_line_2">Sometimes manually taken screenshots also are beneficial in resolving issues.</string>
+    <string name="report_bug_line_3">Please use this function to report as soon as you have noticed issue taking place.</string>
+    <string name="report_bug_line_4">You can also use this function after opening app, after crash has taken place.
+    </string>
+    <string name="report_bug_heading_3">Attachments:</string>
+    <string name="bug_report_logcat">Log file produced by this app. It does not contain information about any other apps.</string>
+    <string name="bug_report_screenshot">Screenshot of app when crash took place, or when bug report was created.</string>
+    <string name="bug_report_attachment_line_1">Having these files attached helps app developers a lot in fixing the reported bug.</string>
+    <string name="report_bug_heading_4">Device info:</string>
+
+    <!-- Document types -->
+    <string name="doc_type_all">All types</string>
+    <string name="doc_type_bible">Bible</string>
+    <string name="doc_type_commentary">Commentary</string>
+    <string name="doc_type_dictionary">Dictionary</string>
+    <string name="doc_type_book">Book</string>
+    <string name="doc_type_map">Map</string>
+    <string name="doc_type_addons">Add-ons</string>
+    
+    <!-- Languages -->
+    <string name="lang_default">Default</string>
+
+    <!-- General -->
+    <string name="okay">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error">Error</string>
+    <string name="delete_generic">Delete</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="all">All</string>
+    <string name="edit">Edit</string>
+    <string name="reset_generic">Reset</string>
+    <string name="watch_tutorial_video">Watch tutorial video (English)</string>
+    <string name="verse_not_found">Verse not found</string>
+
+    <!-- Errors -->
+    <string name="report_error">Send Report</string>
+    <string name="error_occurred">An error has occurred</string>
+    <string name="error_occurred_crash_last_time">Last time when you used the application, it crashed. To help us with fixing the bug, we would appreciate if you send us a bug report. </string>
+    <string name="error_occurred_with_link">An error has occurred. %s</string>
+    <string name="error_no_content">No content for selected verse</string>
+    <string name="error_page_too_large">Page is too large to be loaded</string>
+    <string name="error_key_not_in_document">Not found in document</string>
+    <string name="error_key_not_in_document2">%s was not found in document %s.</string>
+    <string name="empty_list">No items to display</string>
+    <string name="error_skip">Skip</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_tts_status">Text to speech</string>
+    <string name="notification_channel_progress_status">Progress status notification for document downloads etc.</string>
+
+    <!-- Workspaces -->
+    <string name="new_workspace">New</string>
+    <string name="switch_to_workspace">Workspaces</string>
+    <string name="delete_workspace">Remove</string>
+    <string name="new_copied_workspace">Copy as new</string>
+    <string name="workspace_number">Workspace %d</string>
+    <string name="rename_workspace">Rename</string>
+    <string name="workspace_selector_title">Select workspace</string>
+    <string name="workspace_settings">Settings…</string>
+    <string name="give_name_workspace">Give name for new workspace</string>
+    <string name="save_and_exit">Save</string>
+    <string name="workspace_save_changes">Apply changes to workspaces?</string>
+    <string name="copy_of_workspace">Copy of %s</string>
+    <string name="copy_workspace_settings">Copy settings…</string>
+    <string name="copy_settings_title">Which settings do you want to copy?</string>
+    <string name="select_all">Select all</string>
+    <string name="copy_settings_workspaces_title">To which workspaces do you want to copy settings?</string>
+    <string name="reset_settings">Reset</string>
+    <string name="workspace_dismiss">Dismiss</string>
+    <string name="workspace_listing_with_current">%s (current)</string>
+
+    <!-- Beta notice -->
+    <string name="beta_notice_title">This is beta version!</string>
+    <string name="beta_notice_content_1">
+        In beta version, there are new features that are not yet properly tested,
+        and thus using beta might introduce unexpected behavior, i.e. bugs.
+        It is recommended that ordinary Bible readers use stable version instead.
+    </string>
+
+    <string name="beta_notice_content_2">
+        Beta users are encouraged to report bugs via Google Play or
+        (preferably) via %s.
+    </string>
+    <string name="beta_notice_content_3">If you are programmer, please consider contributing bug
+        fixes via %s yourself. :-)</string>
+    <string name="beta_notice_github_issues">Github issues</string>
+    <string name="beta_notice_github">Github</string>
+    <string name="beta_notice_dismiss">Dismiss</string>
+    <string name="beta_notice_dismiss_until_update">Dismiss until next update</string>
+
+    <string name="stable_notice_title">Application has been upgraded!</string>
+    <string name="upgrade_video_message">Please see video featuring new features of this release (%s).</string>
+    <string name="stable_notice_par1">New version %s of %s has been installed successfully!</string>
+
+    <!-- History -->
+    <string name="history_for">History (%s: Window %d)</string>
+
+    <!-- Help -->
+    <string name="help_nav_title">Navigation</string>
+    <string name="help_nav_text">Go to the next or previous chapter by swiping the screen with your finger.
+        Double-tap Bible text to toggle full screen mode.
+        Split screens (called also windows) have menu button on their top-right corner,
+        which enables you to use several window-specific functions and customize window outlook and behaviour.
+    </string>
+    <string name="help_contextmenus_title">Context Menus</string>
+    <string name="help_contextmenus_text">
+        Long pressing in opens context menu or action mode in several views.
+        Long press on the Bible view to open the action mode for actions affecting the current verse.
+        Long press on a document item in list view of Choose Document or Download to delete document or view information.
+        Long press a bookmark in bookmarks listing to add labels or delete bookmark.
+        Long press links to choose if you want to open them in current window, new window or special links window.
+    </string>
+    <string name="help_bookmarks_title">Bookmarks &amp; My Notes</string>
+    <string name="help_bookmarks_text">Bookmarks can be created by selecting some text and choosing "Bookmark" from
+        the popup menu. You can add your custom notes to the new bookmark by tapping the now
+        highlighted text in Bible view. There is also a "My Notes" special document in commentaries that allows you
+        to view your notes in a separate window.
+    </string>
+    <string name="help_studypads_text">
+        Study pads are designed to make it easy to write sermon notes, prepare sermons or just
+        write down personal Bible study notes that have multiple Bible references. Each study pad is associated with one bookmark label.
+        All Bookmarks that have been created with that respective label appear automatically in the study pad document.
+        In addition to bookmarks, there can be custom text entries in a study pad.
+    </string>
+
+    <string name="help_search_title">Search</string>
+    <string name="help_search_text">Search text can include special characters like *, ?, AND, OR, NOT
+        (see "Apache Lucene - Query Parser Syntax" for more details)
+    </string>
+    <string name="help_workspaces_title">Workspaces</string>
+    <string name="help_workspaces_text">
+        Workspaces allow having multiple context-dependent working environments. Workspace functions
+        can be accessed via Workspaces item in options menu (top-right corner). Quick way to access workspaces is
+        by swipe-down gesture from toolbar. You may also use swipe-left and swipe-right gestures over toolbar to
+        switch to previous / next workspace.
+    </string>
+    <string name="help_hidden_features_title">Hidden shortcuts</string>
+    <string name="help_hidden_features_text">
+        Swipe down from toolbar to show workspace selector.
+        Long press window button to quickly minimize.
+        Long press speak toolbar button to quickly go to speak settings.
+        Long press verse location title in toolbar to jump to document selector.
+        Long press the Back button to access the History list.
+    </string>
+    <string name="help_window_pinning_title">Window pinning</string>
+    <string name="help_window_pinning_text">
+        You can enable window pinning from options menu (three dots, right top corner).
+        If window pinning is enabled, you may show many pinned windows on Bible view,
+        but only one non-pinned window. Pinned windows are displayed first, and then
+        unpinned windows. You might want to open Bible documents as pinned windows, and
+        commentaries and maps etc. as non-pinned windows. Then you can easily
+        have Bible documents always opened, and switch quickly between commentaries and
+        other extra material when you study Bible.
+    </string>
+
+    <!-- Welcome text -->
+    <string name="redownload_documents">Quick Redownload</string>
+    <string name="welcome_message">Thank you for downloading %s. There are currently no Bibles or documents installed. To continue, please install
+        at least 1 document by downloading from the internet, or by loading from a zip file document
+        backup.
+    </string>
+    <string name="redownload_message">
+        A list of previous books/documents was found. Click below to easily download them again.
+    </string>
+
+    <!-- Uncategorized -->
+    <string name="close">Close</string>
+    <string name="something_with_parenthesis">%s (%s)</string>
+    <string name="first_time_help_do_not_show_again">I understand</string>
+    <string name="first_time_help_show_next_time">Show again next time</string>
+
+    <string name="strongs_mode_title">Choose strongs mode</string>
+
+    <string name="download_dialog_message">The following books could not be downloaded:</string>
+    <string name="select_multiple">Select multiple</string>
+    <string name="journal_description">User-editable study pads with custom text and bookmarks</string>
+    <string name="my_notes_description">User-editable notes attached to bookmarks</string>
+    <string name="my_notes_abbreviation">My Notes</string>
+    <string name="studypads">Study Pads</string>
+    <string name="multi_description">Multiple references</string>
+    <string name="multi_abbreviation">Multiple</string>
+    <string name="compare_description">Compare translations</string>
+    <string name="compare_abbreviation">Compare</string>
+    <string name="compare">Compare</string>
+    <string name="http_forbidden">Forbidden</string>
+    <string name="http_not_found">Not found</string>
+    <string name="http_unknown">Other error</string>
+    <string name="give_passphrase_for_module">Document %s is encrypted and needs passphrase to be unlocked</string>
+    <string name="unlocking_failed">Unlocking failed, invalid passphrase</string>
+    <string name="unlock_module">Set module passphrase</string>
+    <string name="unlock_info">Encrypted module unlock info</string>
+    <string name="try_again_passphrase">Passphrase did not work, try again?</string>
+    <string name="cant_delete_last_bible">Can\'t remove last Bible document</string>
+    <string name="show_unlock_info">Module &amp; unlock info</string>
+
+    <string name="prefs_show_error_box_title">Show Javascript error box</string>
+    <string name="prefs_show_error_box_summary">Useful for developers when debugging BibleView javascript side errors. This will make the app slower.</string>
+    <string name="active_window_indicator_title">Show active window indicator</string>
+    <string name="active_window_indicator_summary">Highlight window corners to help recognising which window is active</string>
+    <string name="app_licence_title">Open Source License</string>
+
+    <string name="how_to_contribute">How to contribute?</string>
+    <string name="confirm_delete_bookmarks">Do you want to remove %d bookmarks and their notes?</string>
+    <string name="module_size_megabytes">%.1f MB</string>
+    <string name="tell_friend_title">Recommend to a friend</string>
+    <string name="tell_friend_message1">I would like to recommend %s to you.</string>
+    <string name="tell_friend_message2">It is a powerful, yet easy to use, offline Bible study application for Android.</string>
+    <string name="tell_friend_message3">Install it from Play Store: %s</string>
+    <string name="tell_friend_message4">Read more &amp; more install options: %s</string>
+    <string name="share_verse_ok">Share / Copy</string>
+    <string name="verse_action_copy">Copy</string>
+    <string name="share_verse_menu_title">Share / copy…</string>
+    <string name="show_versenumbers">Show verse numbers</string>
+    <string name="show_full_verses">Show full verses</string>
+    <string name="show_selection_only">Show selected text only</string>
+    <string name="advertise_app">Advertise app</string>
+    <string name="verse_share_advertise">Shared using %s.</string>
+    <string name="show_reference">Show reference</string>
+    <string name="show_reference_at_front">Show at front of verse</string>
+    <string name="abbreviate_reference">Abbreviate reference</string>
+    <string name="version_name">Version name</string>
+    <string name="show_version_name">Include version name</string>
+    <string name="show_ellipsis">Show ellipsis (...)</string>
+    <string name="show_quotes">Show quotes</string>
+
+    <string name="backup_button">Backup</string>
+    <string name="back_button">Back</string>
+    <string name="upgrading_database">Upgrading database. Please wait…</string>
+    <string name="initializing_app">Initializing application…</string>
+    <string name="show_notes">Show notes</string>
+    <!-- 1. parameter is current Webview version. 2. minimum version 3. app name 4. Google Play link that takes user to WebView entry in Google Play to upgrade it. -->
+    <string name="old_webview">Android WebView package is too old (%s). You need to upgrade your Android WebView package to at least version %s to use %s. For most devices this can be done via %s.</string>
+    <string name="play">Google Play</string>
+    <string name="proceed_anyway">Proceed anyway</string>
+    <string name="rate_title">Rating and reviewing app</string>
+    <string name="rate_message5">
+        Positive and detailed reviews help And Bible Open Source Project a lot. Thank you!
+    </string>
+    <string name="rate_message6">
+        Before reviewing negative review, please consider the following:
+    </string>
+
+    <!-- parameters are actions (file a bug, send email) -->
+    <string name="rate_message1">
+        If have a problem with app, please %s or %s instead.
+    </string>
+    <!-- param is "please report maintainers" -->
+    <string name="rate_message2">
+        If some text / Bible translation has an issue, %s.
+    </string>
+    <!-- param is "please read what you can do" -->
+    <string name="rate_message3">
+        If particular text is not available in the application, %s.
+    </string>
+    <string name="rate_message4">
+        The developers of this app are not responsible for maintaining documents.
+    </string>
+    <string name="bug_report">
+        send a bug report (from Main Menu)
+    </string>
+    <string name="how_to_help">
+        please read what you can do to help
+    </string>
+    <string name="send_email">
+       send email to developers
+    </string>
+    <string name="proceed_google_play">
+        Proceed to Google Play
+    </string>
+    <string name="text_maintainers">
+       please report issues to text maintainers
+    </string>
+    <string name="does_not_exist_abbreviation">Does Not Exist</string>
+    <string name="cant_change_wholeverse">Can\'t turn off whole verse marking for this bookmark</string>
+    <string name="whole_verse_turned_on">Bookmark is now marked for whole verse</string>
+    <string name="this_bookmark">This bookmark</string>
+    <string name="this_workspace">This workspace</string>
+    <string name="primary_label">Primary label</string>
+    <string name="highlight_entire_verse">Highlight entire verse</string>
+    <string name="favourite_label">Favourite label</string>
+    <string name="edit_label">Edit label</string>
+    <string name="delete_label_confirmation">Do you want to remove bookmark label "%s"? Also all associated Study Pad notes will be removed.</string>
+    <string name="bookmark_underline_style_arbitrary">Underline style for selection bookmarks</string>
+    <string name="bookmark_underline_style_whole_verse">Underline style for whole verse bookmarks</string>
+    <string name="active_labels">Selected labels</string>
+    <string name="recent_labels">Recent labels</string>
+    <string name="other_labels">Other labels</string>
+    <string name="book_menu_sort_row_opt">Order books horizontally</string>
+    <string name="book_menu_group_by_category">Group books by category</string>
+    <string name="reset_workspace_labels">Do you want to reset auto-assign and favorite settings for this workspace?</string>
+    <string name="reset_hide_labels">Do you want to reset setting for hiding specified labels settings?</string>
+    <string name="reorder">Re-order</string>
+    <string name="system_items">System actions</string>
+    <string name="system_items1">More</string>
+    <string name="system_action2">Android actions</string>
+    <string name="text_copied_to_clicpboard">Text copied to clipboard</string>
+    <string name="prefs_disable_two_step_bookmarking_title">One-step bookmarking</string>
+    <string name="prefs_disable_two_step_bookmarking_summary">Show \"Selection\" and \"Verses\" items directly in Bible view Selection menu</string>
+    <string name="prefs_double_tap_to_fullscreen_title">Double-tap to Fullscreen</string>
+    <string name="prefs_double_tap_to_fullscreen_summary">Enter fullscreen mode by double-tapping window</string>
+    <string name="toggle_fullscreen">Fullscreen</string>
+    <string name="exit_fullscreen">Double-tap screen to exit fullscreen</string>
+    <string name="reset_app_prefs">Do you want to reset all global application preferences that are displayed on this screen to their default values?</string>
+    <string name="label_red">Red</string>
+    <string name="label_green">Green</string>
+    <string name="label_blue">Blue</string>
+    <string name="label_salvation">Salvation</string>
+    <string name="label_underline">Underline</string>
+    <string name="import_menu">Import &amp; Export</string>
+    <string name="export_fileformat">Export as %s</string>
+    <string name="import_items">Import %s</string>
+    <string name="import_from_db">Import from App Database file</string>
+    <string name="import_error">Importing from App Database failed. Database file could be wrong format or made with too old version of %s.</string>
+    <string name="chooser_range">Range</string>
+    <string name="chooser_jump">Jump</string>
+    <string name="chooser_OT_abbrev">OT</string>
+    <string name="chooser_NT_abbrev">NT</string>
+    <string name="chooser_style_grid">Grid</string>
+    <string name="chooser_style_lists">Lists</string>
+    <string name="chooser_select">Select %s</string>
+    <string name="chooser_pref_reset">Do not reset chapter/verse to 1 when book/chapter is selected</string>
+    <!-- First param is language name, second is app name (app_name_long), third is "instruction for translators" which will be marked as a hyperlink in dialog. I hope we will never need this string, but nobody knows if some translators will drop us one day ... -->
+    <string name="incomplete_translation">We are sorry, but we have only partial user interface translation in %s language. That is because %s is entirely developed by volunteers. If you can help in translating, please see %s.</string>
+    <!-- will be added to incomplete_translation as a link -->
+    <string name="instructions_for_translators">instructions for translators</string>
+    <string name="questions_title">Questions?</string>
+    <string name="questions_title2">Need help?</string>
+    <string name="bookmark_style">Bookmark style</string>
+    <string name="added_to_bookmark">Assigned to this bookmark</string>
+    <string name="strongs_off">Off</string>
+    <string name="strongs_links">Links</string>
+    <string name="strongs_text_and_links">Text and Links</string>
+    <string name="verse_tip">To select partial or many verses, you can long-press Bible text</string>
+
+    <!-- Android 12 requires new permission, and we need to add this string here for TTS users -->
+    <string name="permission_required">Permission needed</string>
+</resources>
