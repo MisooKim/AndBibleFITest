@@ -138,7 +138,7 @@ class SpeakWidgetManager {
             }
             views.setTextViewText(R.id.statusText, statusText)
             for (id in manager.getAppWidgetIds(ComponentName(app, cls.java))) {
-                statusText = statusText
+				statusText = statusText
                 manager.partiallyUpdateAppWidget(id, views)
             }
         }
