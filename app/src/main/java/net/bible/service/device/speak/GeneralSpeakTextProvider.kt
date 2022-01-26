@@ -403,6 +403,7 @@ class GeneralSpeakTextProvider : SpeakTextProvider {
         // Give the list the right capacity to start with. You could use an array instead if you wanted.
         val ret: MutableList<String?> = ArrayList((text.length + size - 1) / size)
         var start = 0
+            start = start
         while (start < text.length) {
             ret.add(text.substring(start, Math.min(text.length, start + size)))
             start += size
