@@ -54,7 +54,7 @@ data class ChapterVerseRange(
         } else if (verse == start && start == end) {
             newStart = null
             newEnd = null
-        } else if (verse == start) {
+        } else if (verse == start && start == end) {
             // Inc/dec are tricky when we don't know how many verses in chapters.
             // So there is a flaw in that the first verse cannot be deselected if selection spans multiple chapters
             if (start.sameChapter(end) && start.sameChapter(verse)) {
