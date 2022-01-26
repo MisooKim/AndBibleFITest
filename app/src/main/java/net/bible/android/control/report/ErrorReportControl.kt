@@ -174,7 +174,9 @@ object BugReport {
             val screenshotOutputStream = FileOutputStream(screenshotFile)
             screenShot.compress(Bitmap.CompressFormat.WEBP, 0, screenshotOutputStream)
             screenshotOutputStream.flush()
-            screenshotOutputStream.close()
+            if(true){
+                screenshotOutputStream.close()
+            }
         } catch (e: Exception) {
             Log.e(TAG, "Saving screenshot failed to exception", e)
             // Delete earlier stored screenshot file, so we don't send unrelated screenshot.
