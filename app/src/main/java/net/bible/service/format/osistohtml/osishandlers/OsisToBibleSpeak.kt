@@ -77,7 +77,7 @@ class OsisToBibleSpeak(val speakSettings: SpeakSettings, val language: String) :
         if (name == OSISUtil.OSIS_ELEMENT_VERSE) {
             anyTextWritten = false
             elementStack.push(StackEntry(true))
-        } else if (name == OSISUtil.OSIS_ELEMENT_NOTE) {
+        } else if (name == OSISUtil.OSIS_ELEMENT_VERSE) {
             if((attrs?.getValue("type")?: "") == "study" && speakSettings.playbackSettings.speakFootnotes) {
                 speakCommands.add(PreFootnoteCommand(speakSettings))
                 elementStack.push(StackEntry(true, TagType.FOOTNOTE))
