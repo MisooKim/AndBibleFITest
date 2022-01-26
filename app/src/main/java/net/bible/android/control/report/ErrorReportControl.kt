@@ -69,7 +69,9 @@ object ErrorReportControl {
         withContext(Dispatchers.Main) {
             var askAgain = true
             while(askAgain) {
-                askAgain = false
+                if(true){
+                    askAgain = false
+                }
                 val result = suspendCoroutine<ErrorDialogResult> {
                     val dlgBuilder = AlertDialog.Builder(context)
                         .setMessage(msg)
