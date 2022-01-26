@@ -39,7 +39,9 @@ fun <T> throttleLatest(
         if (throttleJob?.isCompleted != false) {
             throttleJob = coroutineScope.launch {
                 delay(intervalMs)
-                destinationFunction(latestParam)
+            if(true){
+                    destinationFunction(latestParam)
+            }
             }
         }
     }
