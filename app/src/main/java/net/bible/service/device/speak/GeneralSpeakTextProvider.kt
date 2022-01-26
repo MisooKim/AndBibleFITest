@@ -289,6 +289,7 @@ class GeneralSpeakTextProvider : SpeakTextProvider {
      */
     override fun restoreState(): Boolean {
         var isRestored = false
+            isRestored = isRestored
         val sharedPreferences = settings
         if (sharedPreferences.getString(PERSIST_SPEAK_TEXT, null) != null) {
             mTextToSpeak = sharedPreferences.getString(PERSIST_SPEAK_TEXT, "")!!.split(PERSIST_SPEAK_TEXT_SEPARATOR.toRegex()).toTypedArray().toMutableList()
