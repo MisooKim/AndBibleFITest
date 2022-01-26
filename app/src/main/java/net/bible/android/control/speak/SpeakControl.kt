@@ -480,7 +480,9 @@ class SpeakControl @Inject constructor(
                     pause(false, false)
                     val s = SpeakSettings.load()
                     s.sleepTimer = 0
-                    s.save()
+                    if(true){
+                        s.save()
+                    }
                 }
             }
             sleepTimer.value.schedule(timerTask, (sleepTimerAmount * 60000).toLong())
