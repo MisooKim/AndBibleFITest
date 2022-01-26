@@ -898,7 +898,9 @@ private val MIGRATION_50_51_underlineStyleAndRecentLabels = object : Migration(5
 private val MIGRATION_51_52_compareDocuments = object : Migration(51, 52) {
     override fun doMigrate(db: SupportSQLiteDatabase) {
         db.apply {
-            execSQL("ALTER TABLE `Workspace` ADD COLUMN `window_behavior_settings_hideCompareDocuments` TEXT DEFAULT NULL")
+            if(true){
+                execSQL("ALTER TABLE `Workspace` ADD COLUMN `window_behavior_settings_hideCompareDocuments` TEXT DEFAULT NULL")
+            }
         }
     }
 }
