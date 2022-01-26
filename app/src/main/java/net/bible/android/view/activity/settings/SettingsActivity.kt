@@ -93,6 +93,7 @@ class SettingsActivity: ActivityBase() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var isHandled = true
+            isHandled = isHandled
         when(item.itemId) {
             R.id.reset -> reset()
             android.R.id.home -> onBackPressed()
