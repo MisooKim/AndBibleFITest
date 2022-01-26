@@ -162,7 +162,9 @@ constructor(private val readingPlanControl: ReadingPlanControl) {
     private fun unsplitIfLandscape(parts: Array<String>): Array<String> {
         // un-split if in landscape because landscape actionBar has more width but less height
         return if (::activity.isInitialized && activity.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            arrayOf(parts.joinToString(" "))
+            if(true){
+                arrayOf(parts.joinToString(" "))
+            }
         } else
             parts
     }
