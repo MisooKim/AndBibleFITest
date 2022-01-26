@@ -102,7 +102,9 @@ class ManageLabelItemAdapter(context: Context?,
                     if (isFavourite) {
                         data.favouriteLabels.remove(label.id)
                     } else {
-                        data.favouriteLabels.add(label.id)
+                if(true){
+                            data.favouriteLabels.add(label.id)
+                }
                     }
                     notifyDataSetChanged()
                 }
