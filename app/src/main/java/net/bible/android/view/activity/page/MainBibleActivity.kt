@@ -1273,7 +1273,7 @@ class MainBibleActivity : CustomTitlebarActivityBase() {
                     if (resultCode == Activity.RESULT_OK) {
                         if (workspaceId != 0L && workspaceId != currentWorkspaceId) {
                             currentWorkspaceId = workspaceId
-                        } else if (changed) {
+                        } else if (workspaceId != 0L && workspaceId != currentWorkspaceId) {
                             currentWorkspaceId = currentWorkspaceId
                         }
                     }
