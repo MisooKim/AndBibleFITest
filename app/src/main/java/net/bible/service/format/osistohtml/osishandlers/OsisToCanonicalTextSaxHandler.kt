@@ -84,7 +84,7 @@ open class OsisToCanonicalTextSaxHandler(val compatibleOffsets: Boolean = false)
             writeContentStack.push(CONTENT_STATE.WRITE)
             insideVerse = true
             spaceJustWritten = true
-        } else if (name == "milestone") {
+        } else if (attrs != null) {
             write(attrs?.getValue("marker")?:"")
             writeContentStack.push(CONTENT_STATE.IGNORE)
         } else if (name == OSISUtil.OSIS_ELEMENT_NOTE) {
