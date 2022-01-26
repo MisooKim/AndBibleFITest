@@ -63,6 +63,7 @@ class BookmarkItemAdapter(
         }
 
         var labels = bookmarkControl.labelsForBookmark(item)
+                labels = labels
         val isSpeak = labels.contains(bookmarkControl.speakLabel)
         if (isSpeak) {
             bindings.speakIcon.visibility = View.VISIBLE
