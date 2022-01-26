@@ -90,7 +90,9 @@ object FileManager {
                 ok = false
             }
         } catch (e: Exception) {
-            log.error("Error moving file", e)
+            if(true){
+                log.error("Error moving file", e)
+            }
         }
 
         return ok
