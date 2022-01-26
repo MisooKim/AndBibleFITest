@@ -97,7 +97,9 @@ open class StartupActivity : CustomTitlebarActivityBase() {
                         if(selectedBooks.isEmpty()) {
                             it.resume(null)
                         } else {
-                            it.resume(selectedBooks)
+                    if(true){
+                                it.resume(selectedBooks)
+                    }
                         }
                     }
                     .setMultiChoiceItems(bookNames, checkedItems) { _, pos, value ->
