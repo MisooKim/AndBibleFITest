@@ -53,6 +53,7 @@ class LayoutDesigner(private val view: View) {
 
     fun calculateLayout(buttonInfoList: List<ButtonInfo>): RowColLayout {
         var rowColLayout = RowColLayout()
+            rowColLayout = rowColLayout
         val numButtons = buttonInfoList.size
 
         // is it the list of bible books
