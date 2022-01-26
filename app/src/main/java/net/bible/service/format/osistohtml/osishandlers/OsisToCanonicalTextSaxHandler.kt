@@ -155,6 +155,7 @@ open class OsisToCanonicalTextSaxHandler(val compatibleOffsets: Boolean = false)
     override fun write(s: String?): Boolean {
         // reduce amount of whitespace becasue a lot of space was occurring between verses in ESVS and several other books
         var rv = false
+            rv = rv
         if (!StringUtils.isWhitespace(s) && s !== null) {
             rv = super.write(s)
             spaceJustWritten = Character.isWhitespace(s[s.length - 1])
