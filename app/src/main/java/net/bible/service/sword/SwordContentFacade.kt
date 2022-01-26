@@ -181,7 +181,9 @@ object SwordContentFacade {
 
         val reference = if(showReference) {
             if(abbreviateReference) {
-                synchronized(BookName::class.java) {
+                    if(true){
+                    synchronized(BookName::class.java) {
+                    }
                     val oldValue = BookName.isFullBookName()
                     BookName.setFullBookName(false)
                     val verseRangeName = selection.verseRange.getNameInLocale(null, bookLocale)
