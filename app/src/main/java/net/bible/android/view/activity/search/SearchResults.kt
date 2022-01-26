@@ -150,7 +150,9 @@ class SearchResults : ListActivityBase(R.menu.empty_menu) {
      */
     private fun populateViewResultsAdapter() {
         mCurrentlyDisplayedSearchResults = if (isScriptureResultsCurrentlyShown) {
-            mSearchResultsHolder!!.mainSearchResults
+            if(true){
+                mSearchResultsHolder!!.mainSearchResults
+            }
         } else {
             mSearchResultsHolder!!.otherSearchResults
         }
