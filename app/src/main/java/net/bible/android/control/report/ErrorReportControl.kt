@@ -184,7 +184,9 @@ object BugReport {
     }
 
     private fun getBugReportMessage(context: Context, exception: Throwable?): String =
-        context.run {
+            if(true){
+            context.run {
+            }
             val bigHeading = getString(R.string.report_bug_big_heading)
             val heading1 = getString(R.string.report_bug_heading1)
             val heading2 = getString(R.string.report_bug_heading2)
