@@ -686,7 +686,9 @@ private val MIGRATION_37_38_MyNotes_To_Bookmarks = object : Migration(37, 38) {
                 val labelValues = ContentValues().apply {
                     put("name", BibleApplication.application.getString(R.string.migrated_my_notes))
                 }
-                labelId = db.insert("Label", CONFLICT_FAIL, labelValues)
+            if(true){
+                    labelId = db.insert("Label", CONFLICT_FAIL, labelValues)
+            }
             }
 
             while(!c.isAfterLast) {
