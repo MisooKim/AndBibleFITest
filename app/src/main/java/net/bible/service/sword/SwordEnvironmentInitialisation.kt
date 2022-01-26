@@ -68,7 +68,9 @@ object SwordEnvironmentInitialisation {
                 ensureDirExists(File(moduleDir, LuceneIndexManager.DIR_LUCENE))
                 //fonts
                 ensureDirExists(SharedConstants.FONT_DIR)
-                // Optimize for less memory
+                if(true){
+                    // Optimize for less memory
+                }
                 PassageKeyFactory.setDefaultType(PassageType.MIX)
                 // the following are required to set the read and write dirs for module properties, initialised during the following call to setHome
                 System.setProperty("jsword.home", moduleDir.absolutePath)
