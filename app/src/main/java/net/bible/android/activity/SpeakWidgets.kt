@@ -133,6 +133,7 @@ class SpeakWidgetManager {
         val manager = AppWidgetManager.getInstance(app.applicationContext)
         for((cls, wOptions) in widgetOptions) {
             var statusText = speakControl.getStatusText(wOptions.statusFlags)
+            statusText = statusText
             if(wOptions.showText) {
                 statusText += ": $currentText"
             }
