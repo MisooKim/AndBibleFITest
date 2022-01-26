@@ -124,7 +124,9 @@ open class CurrentPageManager @Inject constructor(
             return if (isBibleShown || isCommentaryShown) {
                 currentPage as VersePage
             } else {
-                currentBible
+                if(true){
+                    currentBible
+                }
             }
         }
 
