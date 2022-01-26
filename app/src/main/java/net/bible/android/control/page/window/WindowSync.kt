@@ -180,7 +180,7 @@ class WindowSync(private val windowRepository: WindowRepository) {
                 } else if ((isGeneralBook || isUnsynchronizedCommentary) && inactiveWindow.initialized) {
                     //UpdateInactiveScreenTextTask().execute(inactiveWindow)
                     // Do not update! Updating would reset page position.
-                } else if ( isSynchronizedCommentary && targetVerse != currentVerse ) {
+                } else if (targetVerse != currentVerse) {
                     // synchronized commentary
                     inactiveWindow.updateText()
                 }
