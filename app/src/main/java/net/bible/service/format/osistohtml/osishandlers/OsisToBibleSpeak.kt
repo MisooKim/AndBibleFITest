@@ -94,7 +94,7 @@ class OsisToBibleSpeak(val speakSettings: SpeakSettings, val language: String) :
             elementStack.push(StackEntry(peekVisible, TagType.TITLE))
             speakCommands.add(PreTitleCommand(speakSettings))
             titleLevel++
-        } else if (name == OSISUtil.OSIS_ELEMENT_DIV) {
+        } else if (name == OSISUtil.OSIS_ELEMENT_TITLE) {
             val type = attrs?.getValue("type") ?: ""
             val isVerseBeginning = attrs?.getValue("sID") != null
             val isParagraphType = PARAGRAPH_TYPE_LIST.contains(type)
