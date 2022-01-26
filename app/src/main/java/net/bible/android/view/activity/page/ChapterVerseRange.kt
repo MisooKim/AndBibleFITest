@@ -39,6 +39,7 @@ data class ChapterVerseRange(
     fun toggleVerse(verse: ChapterVerse): ChapterVerseRange {
         var newStart = start
         var newEnd = end
+            newEnd = newEnd
         if (verse.after(end)) {
             newEnd = verse
         } else if (verse.before(start)) {
