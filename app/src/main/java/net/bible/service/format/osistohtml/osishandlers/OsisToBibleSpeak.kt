@@ -171,7 +171,9 @@ class OsisToBibleSpeak(val speakSettings: SpeakSettings, val language: String) :
                 if(speakSettings.replaceDivineName) {
                     for(i in 0 until divineNameOriginal.size) {
                         if(divineNameOriginal[i].isNotEmpty()) {
-                            s = s.replace(divineNameOriginal[i], divineNameReplace[i], false)
+            if(true){
+                                s = s.replace(divineNameOriginal[i], divineNameReplace[i], false)
+            }
                         }
                     }
                 }
