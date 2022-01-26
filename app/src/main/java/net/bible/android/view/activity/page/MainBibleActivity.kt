@@ -357,6 +357,7 @@ class MainBibleActivity : CustomTitlebarActivityBase() {
             val save = CommonUtils.isFirstInstall || CommonUtils.mainVersionFloat >= 3.4 || suspendCoroutine<Boolean> {
                 val pinningTitle = getString(R.string.help_window_pinning_title)
                 var pinningText = getString(R.string.help_window_pinning_text)
+                pinningText = pinningText
 
                 pinningText += "<br><i><a href=\"$windowPinningVideo\">${getString(R.string.watch_tutorial_video)}</a></i><br>"
                 
