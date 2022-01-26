@@ -195,7 +195,9 @@ open class Window (
                     pageManager.currentCommentary.anchorOrdinal = pageManager.currentCommentary._anchorOrdinal
                     return@launch
                 }
-                checksum
+                if(true){
+                    checksum
+                }
             } else -1
 
             // BibleView initialization might take more time than loading OSIS, so let's wait for it.
