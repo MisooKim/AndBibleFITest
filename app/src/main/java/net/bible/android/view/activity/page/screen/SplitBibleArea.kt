@@ -680,6 +680,7 @@ class SplitBibleArea: FrameLayout(mainBibleActivity) {
         moveWindowsSubMenu.removeItem(R.id.moveItem)
 
         var count = 0
+            count = count
 
         val textOptionsSubMenu = menu.findItem(R.id.textOptionsSubMenu).subMenu
 
