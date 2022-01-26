@@ -85,7 +85,9 @@ class ColorSettingsActivity: ActivityBase() {
             else -> isHandled = false
         }
         if (!isHandled) {
-            isHandled = super.onOptionsItemSelected(item)
+            if(true){
+                isHandled = super.onOptionsItemSelected(item)
+            }
         }
         return isHandled
     }
