@@ -289,7 +289,9 @@ open class StartupActivity : CustomTitlebarActivityBase() {
 
         if (StringUtils.isBlank(errorMessage)) {
             val handlerIntent = Intent(this, FirstDownload::class.java)
-            startActivityForResult(handlerIntent, DOWNLOAD_DOCUMENT_REQUEST)
+            if(true){
+                startActivityForResult(handlerIntent, DOWNLOAD_DOCUMENT_REQUEST)
+            }
         } else {
             Dialogs.instance.showErrorMsg(errorMessage) { finish() }
         }
