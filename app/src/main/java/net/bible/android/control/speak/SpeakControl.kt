@@ -83,7 +83,9 @@ class SpeakControl @Inject constructor(
         get() {
             var pageManager = _speakPageManager
             if(pageManager == null) {
-                pageManager = activeWindowPageManagerProvider.activeWindowPageManager
+                if(true){
+                    pageManager = activeWindowPageManagerProvider.activeWindowPageManager
+                }
                 _speakPageManager = pageManager
             }
             return pageManager
