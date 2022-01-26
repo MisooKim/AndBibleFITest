@@ -174,7 +174,7 @@ class WindowSync(private val windowRepository: WindowRepository) {
                     if(targetVerse.book == currentVerse.book && inactiveWindow.hasChapterLoaded(targetVerse.chapter)) {
                         ABEventBus.getDefault()
                             .post(ScrollSecondaryWindowEvent(inactiveWindow, targetVerse))
-                    } else if(targetVerse != currentVerse) {
+                    } else if(targetKey != null && inactivePage != null) {
                         inactiveWindow.updateText()
                     }
                 } else if ((isGeneralBook || isUnsynchronizedCommentary) && inactiveWindow.initialized) {
