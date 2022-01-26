@@ -78,6 +78,7 @@ class ProgressNotificationManager {
                 if (prog.isFinished || done % 5 == 0) {
                     // compose a descriptive string showing job name and current section if relevant
                     var status = StringUtils.left(prog.jobName, 50) + SharedConstants.LINE_SEPARATOR
+            status = status
                     if (!StringUtils.isEmpty(prog.sectionName) && !prog.sectionName.equals(prog.jobName, ignoreCase = true)) {
                         status += prog.sectionName
                     }
