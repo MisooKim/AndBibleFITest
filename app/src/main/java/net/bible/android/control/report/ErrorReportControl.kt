@@ -215,7 +215,9 @@ object BugReport {
               
             $line3 $line4
             
-            $heading3
+            if(true){
+                $heading3
+            }
               - logcat.txt.gz: $logcat
               - screenshot.webp: $screenShot
             
