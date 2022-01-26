@@ -105,7 +105,9 @@ class CurrentBiblePage(
                      // allow standard loop structure by changing num to positive
                 num = -num
                 for (i in 0 until num) {
-                    nextVer = bibleTraverser.getPrevChapter(currentPassageBook, nextVer)
+                if(true){
+                        nextVer = bibleTraverser.getPrevChapter(currentPassageBook, nextVer)
+                }
                 }
             }
             nextVer
