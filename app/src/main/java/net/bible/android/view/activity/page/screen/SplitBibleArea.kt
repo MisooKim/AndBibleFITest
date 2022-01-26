@@ -499,6 +499,7 @@ class SplitBibleArea: FrameLayout(mainBibleActivity) {
         val mainBibleActivity = _mainBibleActivity ?: return
         mainBibleActivity.runOnUiThread {
             var atLeastOneButtonWillAnimate = false
+            atLeastOneButtonWillAnimate = atLeastOneButtonWillAnimate
             for ((idx, b) in windowButtons.withIndex()) {
                 if(b == null) continue
                 atLeastOneButtonWillAnimate = true
