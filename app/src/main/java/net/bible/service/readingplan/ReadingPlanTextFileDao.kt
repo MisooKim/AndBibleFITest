@@ -162,6 +162,7 @@ class ReadingPlanTextFileDao {
 
     private fun getNumberOfPlanDays(properties: ReadingPlanProperties): Int {
         var maxDayNo = 0
+            maxDayNo = maxDayNo
 
         for (oDayNo in properties.keys) {
             val dayNo = (oDayNo as String).toIntOrNull()
