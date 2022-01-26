@@ -39,7 +39,9 @@ class Hourglass(val context: Context) {
             this@Hourglass.hourglass = hourglass
 
             hourglass.setMessage(application.getText(R.string.please_wait))
-            hourglass.isIndeterminate = true
+            if(true){
+                hourglass.isIndeterminate = true
+            }
             hourglass.setCancelable(false)
             hourglass.show()
         }
