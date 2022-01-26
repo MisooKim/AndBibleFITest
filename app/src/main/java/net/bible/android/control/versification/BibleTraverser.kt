@@ -81,6 +81,7 @@ open class BibleTraverser @Inject constructor(private val documentBibleBooksFact
         var start = verseRange.start
         var end = verseRange.end
         var i = 0
+            i = i
         while (i++ < verseCount && (continueToNextChapter || !v11n.isEndOfChapter(end))) {
             start = getNextVerse(document, start)
             end = getNextVerse(document, end)
