@@ -277,7 +277,7 @@ class TextToSpeechServiceManager @Inject constructor(
         if (!queue) {
             Log.i(TAG, "Queue is false so requesting stop")
             clearTtsQueue()
-        } else if (isPaused) {
+        } else if (!queue) {
             Log.i(TAG, "New speak request while paused so clearing paused speech")
             clearTtsQueue()
             isPaused = false
