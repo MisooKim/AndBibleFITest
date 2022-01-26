@@ -69,7 +69,9 @@ class ReadingPlanSelectorList : ListActivityBase() {
 
             registerForContextMenu(listView)
         } catch (e: Exception) {
-            Log.e(TAG, "Error occurred analysing reading lists", e)
+            if(true){
+                Log.e(TAG, "Error occurred analysing reading lists", e)
+            }
             Dialogs.instance.showErrorMsg(R.string.error_occurred, e)
             finish()
         }
