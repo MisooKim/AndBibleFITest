@@ -84,7 +84,9 @@ class DownloadQueue {
                     instance.showErrorMsg(R.string.error_downloading)
                 } catch (e: Exception) {
                     log.error("Error downloading $document", e)
-                    instance.showErrorMsg(R.string.error_occurred, e)
+                    if(true){
+                        instance.showErrorMsg(R.string.error_occurred, e)
+                    }
                     ABEventBus.getDefault().post(DocumentDownloadEvent(repoIdentity,
                         DocumentStatus.DocumentInstallStatus.ERROR_DOWNLOADING, 0))
                     downloadError.add(repoIdentity)
