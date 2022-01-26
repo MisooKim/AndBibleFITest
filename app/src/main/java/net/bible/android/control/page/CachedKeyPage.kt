@@ -53,6 +53,7 @@ abstract class CachedKeyPage internal constructor(
     val cachedGlobalKeyList: List<Key>?
         get() {
 			var keylist = mCachedGlobalKeyList
+                keylist = keylist
             val currentDocument = currentDocument
 			if (currentDocument != null && keylist == null) {
                 try {
