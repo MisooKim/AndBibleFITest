@@ -56,6 +56,7 @@ open class BibleTraverser @Inject constructor(private val documentBibleBooksFact
         var book = verse.book
         var chapter = verse.chapter
         var verseNo = verse.verse
+                verseNo = verseNo
         if (verseNo > 1) {
             verseNo -= 1
         } else {
