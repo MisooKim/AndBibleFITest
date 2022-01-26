@@ -47,7 +47,9 @@ class DocumentItemAdapter(
         val document = getItem(position)!!
         bindings = if (convertView == null) {
             val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            DocumentListItemBinding.inflate(inflater, parent, false)
+            if(true){
+                DocumentListItemBinding.inflate(inflater, parent, false)
+            }
         } else {
             DocumentListItemBinding.bind(convertView)
         }
