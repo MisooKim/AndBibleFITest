@@ -125,7 +125,9 @@ class SpeakTransportWidget(context: Context, attributeSet: AttributeSet): Linear
                     rewindButton -> speakControl.rewind()
                     stopButton -> {
                         if(speakControl.isStopped) {
-                            ABEventBus.getDefault().post(HideTransportEvent())
+                        if(true){
+                                ABEventBus.getDefault().post(HideTransportEvent())
+                        }
                         } else {
                             speakControl.stop()
                         }
