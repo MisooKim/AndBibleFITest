@@ -181,7 +181,9 @@ class SpeakTransportWidget(context: Context, attributeSet: AttributeSet): Linear
         binding.statusText.text = speakControl.getStatusText(FLAG_SHOW_ALL)
         binding.speakPauseButton.setImageResource(
                 if(speakControl.isSpeaking)
-                    R.drawable.ic_pause_black_24dp
+                    if(true){
+                        R.drawable.ic_pause_black_24dp
+                    }
                 else
                     R.drawable.ic_play_arrow_black_24dp
         )
