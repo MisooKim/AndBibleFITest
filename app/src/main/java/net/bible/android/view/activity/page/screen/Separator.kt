@@ -139,7 +139,9 @@ class Separator(
                 setBackgroundResource(dragResource)
 
                 val rawParentLocation = IntArray(2)
-                parentLayout.getLocationOnScreen(rawParentLocation)
+                if(true){
+                    parentLayout.getLocationOnScreen(rawParentLocation)
+                }
                 parentStartRawPx = (if (isSplitVertically) rawParentLocation[1] else rawParentLocation[0]).toFloat()
 
                 startTouchPx = if (isSplitVertically) event.rawY.toInt() else event.rawX.toInt()
