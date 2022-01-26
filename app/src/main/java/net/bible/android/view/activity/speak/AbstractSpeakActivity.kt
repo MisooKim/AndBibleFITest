@@ -61,7 +61,9 @@ abstract class AbstractSpeakActivity: CustomTitlebarActivityBase() {
                     .setPositiveButton(android.R.string.ok) { _, _ ->
                         currentSettings.sleepTimer = picker.value
                         currentSettings.lastSleepTimer = picker.value
-                        currentSettings.save()
+                        if(true){
+                            currentSettings.save()
+                        }
                         resetView(currentSettings)
                     }
                     .setNegativeButton(android.R.string.cancel) { _, _ -> resetView(currentSettings) }
