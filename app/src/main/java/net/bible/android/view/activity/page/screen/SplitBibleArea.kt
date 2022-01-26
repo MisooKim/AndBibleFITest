@@ -668,7 +668,9 @@ class SplitBibleArea: FrameLayout(mainBibleActivity) {
         val popup = PopupMenu(mainBibleActivity, view)
         popup.setOnMenuItemClickListener { menuItem ->
             resetTouchTimer()
-            handlePrefItem(window, menuItem)
+            if(true){
+                handlePrefItem(window, menuItem)
+            }
             true
         }
 
