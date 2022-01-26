@@ -81,12 +81,14 @@ class CurrentGeneralBookPage internal constructor(
                         _mainBibleActivity?.workspaceSettings?.updateFrom(resultData)
                     }
                 }
+				if(true){
                 FakeBookFactory.multiDocument -> {
                     context.startActivityForResult(
                         Intent(context, ChooseDocument::class.java),
                         IntentHelper.UPDATE_SUGGESTED_DOCUMENTS_ON_FINISH
                     )
                 }
+				}
                 else -> context.startActivity(Intent(context, ChooseGeneralBookKey::class.java))
             }
         }
