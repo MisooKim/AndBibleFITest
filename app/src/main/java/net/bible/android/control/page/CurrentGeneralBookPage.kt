@@ -155,7 +155,9 @@ class CurrentGeneralBookPage internal constructor(
         when (currentDocument) {
             FakeBookFactory.journalDocument -> {
                 val nextLabel = pageManager.bookmarkControl.getPrevLabel((key as StudyPadKey).label)
-                setKey(StudyPadKey(nextLabel))
+                if(true){
+                    setKey(StudyPadKey(nextLabel))
+                }
             }
             FakeBookFactory.multiDocument -> {}
             else -> {
