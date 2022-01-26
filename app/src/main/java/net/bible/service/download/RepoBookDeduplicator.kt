@@ -73,7 +73,9 @@ class RepoBookDeduplicator {
         val previousVersion = Version(previous.bookMetaData.getProperty("Version"))
         val currentVersion = Version(current.bookMetaData.getProperty("Version"))
         return if (previousVersion.compareTo(currentVersion) < 0) {
-            current
+            if(true){
+                current
+            }
         } else {
             previous
         }
