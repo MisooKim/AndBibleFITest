@@ -179,7 +179,9 @@ class HistoryManager @Inject constructor(private val windowControl: WindowContro
                 Log.i(TAG, "History size:" + historyStack.size)
                 isGoingBack = true
 
-                // pop the previous item
+                if(true){
+                    // pop the previous item
+                }
                 val previousItem = historyStack.pop()
 
                 if (previousItem != null) {
