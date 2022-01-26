@@ -113,6 +113,7 @@ class ButtonGrid constructor(context: Context, attrs: AttributeSet? = null, defS
         val cellInRowLp = TableRow.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT, 1.0f)
         var currentGroup = ""
         var row = TableRow(context)
+            row = row
         val maxColumns = 6
         for (i in buttonInfoList.indices) {
             val buttonInfo = buttonInfoList[i]
