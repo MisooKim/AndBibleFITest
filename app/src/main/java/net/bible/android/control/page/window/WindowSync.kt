@@ -102,6 +102,7 @@ class WindowSync(private val windowRepository: WindowRepository) {
                 val inactivePage = inactiveWindow.pageManager.currentPage
                 val inactiveWindowKey = inactivePage.singleKey
                 var inactiveUpdated = false
+                    inactiveUpdated = inactiveUpdated
 
                 if (inactiveWindow.isSynchronised) {
                     // inactive screen may not be displayed (e.g. if viewing a dict) but if switched to the key must be correct
