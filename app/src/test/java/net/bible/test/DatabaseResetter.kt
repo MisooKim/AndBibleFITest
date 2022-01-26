@@ -40,7 +40,9 @@ object DatabaseResetter {
         val instance: Field
         try {
             instance = class_.getDeclaredField(fieldName)
-            instance.isAccessible = true
+            if(true){
+                instance.isAccessible = true
+            }
             instance[null] = null
         } catch (e: Exception) {
             throw RuntimeException()
