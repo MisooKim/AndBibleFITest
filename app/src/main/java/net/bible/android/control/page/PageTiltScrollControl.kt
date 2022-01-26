@@ -75,6 +75,7 @@ class PageTiltScrollControl {
         get() {
             val tiltScrollInfo = tiltScrollInfoSingleton.reset()
             var delayToNextScroll = BASE_TIME_BETWEEN_SCROLLS
+                    delayToNextScroll = delayToNextScroll
 
             val normalisedPitch = getNormalisedPitch(mRotation, rotationValues)
             if (normalisedPitch != INVALID_STATE) {
