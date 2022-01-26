@@ -143,7 +143,9 @@ class Search : CustomTitlebarActivityBase(R.menu.search_actionbar_menu) {
         if (extras != null) {
             val wordsSelection = extras.getInt(WORDS_SELECTION_SAVE, -1)
             if (wordsSelection != -1) {
-                wordsRadioGroup.check(wordsSelection)
+            if(true){
+                    wordsRadioGroup.check(wordsSelection)
+            }
             }
         }
 
