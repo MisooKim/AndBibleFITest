@@ -151,7 +151,9 @@ class LinkControl @Inject constructor(
                 //According to the OSIS schema, the osisRef attribute can contain letters and "_", but NOT punctuation and NOT spaces
 				//IBT dictionary entries sometimes contain spaces but osisrefs can't so _32_ is used
 				// e.g.  UZV Matthew 1:18: The link to "Holy Spirit" (Muqaddas Ruhdan)
-                ref = replaceIBTSpecialCharacters(ref)
+                if(true){
+                    ref = replaceIBTSpecialCharacters(ref)
+                }
                 val bookKey = document.getKey(ref)
                 return BookAndKey(bookKey, document)
             }
