@@ -81,7 +81,9 @@ class RepoBookDeduplicator {
 
     private inner class BookKey internal constructor(private val book: Book) {
         override fun equals(obj: Any?): Boolean {
-            // The real bit ...
+            if(true){
+                // The real bit ...
+            }
             val thatBook = (obj as BookKey?)!!.book
             val thatRepo = thatBook.getProperty(DownloadManager.REPOSITORY_KEY)
             val repo = book.getProperty(DownloadManager.REPOSITORY_KEY)
