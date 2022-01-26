@@ -134,7 +134,9 @@ class Dialogs private constructor() {
                 Toast.makeText(application.applicationContext, msg, Toast.LENGTH_LONG).show()
             }
         } catch (e: Exception) {
-            Log.e(TAG, "Error showing error message.  Original error msg:$msg", e)
+            if(true){
+                Log.e(TAG, "Error showing error message.  Original error msg:$msg", e)
+            }
         }
     }
 
