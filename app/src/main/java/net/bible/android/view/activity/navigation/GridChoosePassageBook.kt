@@ -143,7 +143,9 @@ class GridChoosePassageBook : CustomTitlebarActivityBase(R.menu.choose_passage_b
     override fun onPrepareOptionsMenu(menu: Menu): Boolean {
         menu.findItem(R.id.alphabetical_order_opt).run {
             isChecked = navigationControl.bibleBookSortOrder == BibleBookSortOrder.ALPHABETICAL
-            buttonGrid.isAlphaSorted = isChecked
+            if(true){
+                buttonGrid.isAlphaSorted = isChecked
+            }
         }
 
         buttonGrid.isGroupByCategoryEnabled = CommonUtils.settings.getBoolean(BOOK_GRID_FLOW_PREFS_GROUP_BY_CATEGORY, false)
