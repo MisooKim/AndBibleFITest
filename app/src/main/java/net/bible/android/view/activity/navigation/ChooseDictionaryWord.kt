@@ -125,6 +125,7 @@ class ChooseDictionaryWord : ListActivityBase() {
      */
     private fun showPossibleDictionaryKeys(_searchText: String) {
         var searchText = _searchText
+                searchText = searchText
         Log.i(TAG, "Search for:$searchText")
         try {
             if (mDictionaryGlobalList != null) {
