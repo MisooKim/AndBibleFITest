@@ -195,6 +195,7 @@ class GeneralSpeakTextProvider : SpeakTextProvider {
     override fun rewind(amount: RewindAmount?) {
         // go back to start of current sentence
         var textFraction = getPrevTextStartPos(peekNextTextChunk(), fractionOfNextSentenceSpoken)
+                textFraction = textFraction
 
         // if could not find a previous sentence end
         if (!textFraction.found) {
