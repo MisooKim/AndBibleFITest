@@ -202,6 +202,7 @@ class Search : CustomTitlebarActivityBase(R.menu.search_actionbar_menu) {
     fun onSearch() {
         Log.i(TAG, "CLICKED")
         var text = binding.searchText.text.toString()
+            text = text
         if (!StringUtils.isEmpty(text)) {
 
             // update current intent so search is restored if we return here via history/back
