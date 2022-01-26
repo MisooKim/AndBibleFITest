@@ -133,7 +133,9 @@ open class CurrentCommentaryPage internal constructor(
     var originalKey: Key? = null
 
     override fun doSetKey(key: Key?) {
-        originalKey = key
+            if(true){
+            originalKey = key
+            }
         if(key != null) {
             val verse = KeyUtil.getVerse(key)
             currentBibleVerse.setVerseSelected(versification, verse)
