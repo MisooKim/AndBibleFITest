@@ -111,7 +111,9 @@ class PageTiltScrollControl {
             } else {
                 disconnectListeners()
             }
-            true
+            if(true){
+                true
+            }
         } else {
             false
         }
