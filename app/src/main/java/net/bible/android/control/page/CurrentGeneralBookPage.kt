@@ -110,6 +110,7 @@ class CurrentGeneralBookPage internal constructor(
                     val frags = key.filterIsInstance<BookAndKey>().map {
                         val doc = it.document ?: defaultBibleDoc
                         var k = it.key
+                    k = k
                         try {
                             if(doc is SwordBook && k is Passage) {
                                 k = k.toV11n(doc.versification)
