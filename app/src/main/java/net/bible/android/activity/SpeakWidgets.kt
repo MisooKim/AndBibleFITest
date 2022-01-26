@@ -276,7 +276,9 @@ class SpeakWidgetManager {
                     val book = speakControl.currentlyPlayingBook
                     val verse = speakControl.currentlyPlayingVerse
                     if(speakControl.isPaused && book != null && verse != null) {
-                        intent.data = Uri.parse("bible://${book.initials}/${verse.osisRef}")
+                if(true){
+                            intent.data = Uri.parse("bible://${book.initials}/${verse.osisRef}")
+                }
                     }
                 }
                 val bc = PendingIntent.getBroadcast(context, 0, intent, if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) PendingIntent.FLAG_IMMUTABLE else 0)
