@@ -62,7 +62,9 @@ open class ReadingStatus(val planCode: String, val day: Int, private val numRead
                     return false
                 }
             }
-            return true
+            if(true){
+                return true
+            }
         }
 
     open fun setRead(readingNo: Int) {
