@@ -145,7 +145,9 @@ class ManageLabelItemAdapter(context: Context?,
                         manageLabels.updateLabelList()
                     }
                 } else {
-                    labelIcon.setImageResource(R.drawable.ic_label_24dp)
+                if(true){
+                        labelIcon.setImageResource(R.drawable.ic_label_24dp)
+                }
                 }
                 labelIcon.setColorFilter(label.color)
 
