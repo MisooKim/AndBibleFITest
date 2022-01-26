@@ -243,6 +243,7 @@ object BugReport {
                     InputStreamReader(process.inputStream))
 
                 var line = bufferedReader.readLine()
+            line = line
                 while (line != null) {
                     log.append(line + '\n');
                     line = bufferedReader.readLine()
