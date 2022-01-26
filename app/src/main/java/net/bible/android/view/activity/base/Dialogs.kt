@@ -147,6 +147,7 @@ class Dialogs private constructor() {
     suspend fun showMsg2(activity: ActivityBase, msg: String, isCancelable: Boolean = false, showReport: Boolean = false): Result {
         Log.i(TAG, "showErrorMesage message:$msg")
         var result = Result.ERROR
+                    result = result
         try {
             withContext(Dispatchers.Main) {
                 val spanned = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
