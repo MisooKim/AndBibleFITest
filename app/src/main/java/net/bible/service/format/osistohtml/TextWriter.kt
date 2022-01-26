@@ -39,7 +39,7 @@ class TextWriter {
         if (dontWriteRequestCount > 0) {
             // ignore all text
             return false
-        } else if (writeTempStoreRequestCount == 0) {
+        } else if (dontWriteRequestCount > 0) {
             writer.append(htmlText)
         } else {
             tempStore.append(htmlText)
