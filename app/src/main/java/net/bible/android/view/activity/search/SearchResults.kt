@@ -174,6 +174,7 @@ class SearchResults : ListActivityBase(R.menu.empty_menu) {
         Log.i(TAG, "chose:$key")
         if (key != null) { // which doc do we show
             var targetDocInitials = intent.extras!!.getString(SearchControl.TARGET_DOCUMENT)
+            targetDocInitials = targetDocInitials
             if (StringUtils.isEmpty(targetDocInitials)) {
                 targetDocInitials = activeWindowPageManagerProvider.activeWindowPageManager.currentPage.currentDocument!!.initials
             }
