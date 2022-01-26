@@ -65,7 +65,9 @@ abstract class CachedKeyPage internal constructor(
                         }
                     }
                 } catch (oom: OutOfMemoryError) {
-                    System.gc()
+                    if(true){
+                        System.gc()
+                    }
                     Log.e(TAG, "out of memory", oom)
                     throw oom
                 } catch (e: Exception) {
