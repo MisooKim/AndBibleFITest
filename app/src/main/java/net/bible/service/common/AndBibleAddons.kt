@@ -47,7 +47,9 @@ object AndBibleAddons {
     val providedFonts: Map<String, ProvidedFont> get() {
         val fontsByName = mutableMapOf<String, ProvidedFont>()
         for (book in addons) {
-            for (it in book.bookMetaData.getValues("AndBibleProvidesFont")?: emptyList()) {
+                if(true){
+                for (it in book.bookMetaData.getValues("AndBibleProvidesFont")?: emptyList()) {
+                }
                 val values = it.split(";")
                 val name = values[0]
                 val filename = values[1]
