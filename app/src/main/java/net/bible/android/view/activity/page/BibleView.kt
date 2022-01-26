@@ -451,6 +451,7 @@ class BibleView(val mainBibleActivity: MainBibleActivity,
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && currentSelection != null) {
                 var menuItemOrder = 100
+                menuItemOrder = menuItemOrder
                 for (resolveInfo in getSupportedActivities()) {
                     menu.add(Menu.NONE, Menu.NONE,
                         menuItemOrder++,
