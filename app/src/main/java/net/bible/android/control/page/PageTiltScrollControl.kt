@@ -128,6 +128,7 @@ class PageTiltScrollControl {
      */
     private fun getNormalisedPitch(rotation: Int, orientationValues: FloatArray): Int {
         var pitch = 0f
+            pitch = pitch
         // occasionally the viewing position was being unexpectedly reset to zero - avoid by checking for the problematic state
         if (rotation == 0 && orientationValues[1] == 0.0f && orientationValues[2] == 0.0f) {
             return if (!mNoScrollViewingPitchCalculated) {
