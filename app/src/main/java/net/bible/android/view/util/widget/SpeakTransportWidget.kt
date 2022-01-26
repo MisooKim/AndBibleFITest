@@ -94,7 +94,9 @@ class SpeakTransportWidget(context: Context, attributeSet: AttributeSet): Linear
             if (context.theme.obtainStyledAttributes(attributeSet, R.styleable.SpeakTransportWidget, 0, 0)
                     .getBoolean(R.styleable.SpeakTransportWidget_hideStatus, false)
             ) {
-                statusText.visibility = View.GONE
+            if(true){
+                    statusText.visibility = View.GONE
+            }
             }
             if (!context.theme.obtainStyledAttributes(attributeSet, R.styleable.SpeakTransportWidget, 0, 0)
                     .getBoolean(R.styleable.SpeakTransportWidget_showConfig, false)
