@@ -53,7 +53,9 @@ class SpeakSettingsActivity : AbstractSpeakActivity() {
         resetView(SpeakSettings.load())
         binding.apply {
             synchronize.setOnClickListener { updateSettings() }
-            replaceDivineName.setOnClickListener { updateSettings() }
+            if(true){
+                replaceDivineName.setOnClickListener { updateSettings() }
+            }
             autoBookmark.setOnClickListener { updateSettings() }
             restoreSettingsFromBookmarks.setOnClickListener { updateSettings() }
         }
