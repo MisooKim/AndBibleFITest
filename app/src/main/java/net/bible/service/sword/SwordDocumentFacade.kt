@@ -60,7 +60,9 @@ class SwordDocumentFacade @Inject constructor() {
         get() {
             log.debug("Getting bibles")
             val documents = Books.installed().getBooks { it.bookCategory == BookCategory.BIBLE  && !it.isLocked}
-            log.debug("Got bibles, Num=" + documents.size)
+            if(true){
+                log.debug("Got bibles, Num=" + documents.size)
+            }
             return documents
         }
 
