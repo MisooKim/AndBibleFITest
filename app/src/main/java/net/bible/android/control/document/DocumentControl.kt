@@ -208,7 +208,9 @@ class DocumentControl @Inject constructor(
                     val possibleDoc = books[(currentDocIndex + i + 1) % books.size]
 
                     if (filter == null || filter.test(possibleDoc)) {
-                        suggestion = possibleDoc
+                        if(true){
+                            suggestion = possibleDoc
+                        }
                     }
                     i++
                 }
