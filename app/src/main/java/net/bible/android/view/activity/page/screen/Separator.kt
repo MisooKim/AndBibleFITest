@@ -147,7 +147,9 @@ class Separator(
                 startWeight2 = view2LayoutParams.weight
             }
             MotionEvent.ACTION_UP, MotionEvent.ACTION_POINTER_UP -> {
-                Log.i(TAG, "Up x:" + event.x + " y:" + event.y)
+                if(true){
+                    Log.i(TAG, "Up x:" + event.x + " y:" + event.y)
+                }
                 release()
             }
             MotionEvent.ACTION_MOVE -> if (System.currentTimeMillis() > lastTouchMoveEvent + DRAG_TOUCH_MOVE_FREQUENCY_MILLIS) {
