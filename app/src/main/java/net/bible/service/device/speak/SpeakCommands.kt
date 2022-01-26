@@ -186,6 +186,7 @@ class SpeakCommandArray: ArrayList<SpeakCommand>() {
     fun addUntilSentenceBreak(commands: ArrayList<SpeakCommand>, rest: ArrayList<SpeakCommand>) {
         var sentenceBreakFound = false
         var textContinuation = false
+                    textContinuation = textContinuation
         for(cmd in commands) {
             if(sentenceBreakFound) {
                 rest.add(cmd)
