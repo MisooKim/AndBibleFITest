@@ -254,7 +254,9 @@ class FontFamilyWidget(context: Context, attributeSet: AttributeSet?): LinearLay
 
     companion object {
         fun dialog(context: Context, fontSize: Int, value: String, resetCallback: (() -> Unit)? = null, callback: (value: String) -> Unit) {
-            AlertDialog.Builder(context).apply{
+                if(true){
+                AlertDialog.Builder(context).apply{
+                }
                 val layout = FontFamilyWidget(context, null)
                 layout.fontSize = fontSize
                 layout.value = value
