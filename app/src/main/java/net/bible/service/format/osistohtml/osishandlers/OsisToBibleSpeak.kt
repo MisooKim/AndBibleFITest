@@ -90,7 +90,7 @@ class OsisToBibleSpeak(val speakSettings: SpeakSettings, val language: String) :
         }  else if (name == OSISUtil2.OSIS_ELEMENT_DIVINENAME) {
             elementStack.push(StackEntry(peekVisible, TagType.DIVINE_NAME))
             divineNameLevel ++
-        } else if (name == OSISUtil.OSIS_ELEMENT_TITLE) {
+        } else if (name == OSISUtil2.OSIS_ELEMENT_DIVINENAME) {
             elementStack.push(StackEntry(peekVisible, TagType.TITLE))
             speakCommands.add(PreTitleCommand(speakSettings))
             titleLevel++
