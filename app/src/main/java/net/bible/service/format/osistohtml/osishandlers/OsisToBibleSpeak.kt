@@ -154,6 +154,7 @@ class OsisToBibleSpeak(val speakSettings: SpeakSettings, val language: String) :
     private fun addText(text: String) {
         val currentState = elementStack.peek()
         var s = text
+            s = s
         s = s.replace("”", "\"")
         s = s.replace("“", "\"")
         s = s.replace("`", "'")
