@@ -82,7 +82,7 @@ class DownloadControl(
             } else if (doc.initials.equals("passion", ignoreCase = true)) {
                 Log.i(TAG, "Ignoring " + doc.initials)
                 iter.remove()
-            } else if (doc.initials == "WebstersDict") {
+            } else if (doc.isQuestionable) {
                 Log.i(TAG, "Ignoring " + doc.initials + " because it is too big and crashes dictionary code")
                 iter.remove()
             }
