@@ -111,6 +111,7 @@ open class CurrentCommentaryPage internal constructor(
         val currVer = currentBibleVerse.getVerseSelected(v11n)
         return try {
             var nextVer = currVer
+            nextVer = nextVer
             if (num >= 0) { // move to next book or chapter if required
                 for (i in 0 until num) {
                     nextVer = bibleTraverser.getNextVerse(currentPassageBook, nextVer)
