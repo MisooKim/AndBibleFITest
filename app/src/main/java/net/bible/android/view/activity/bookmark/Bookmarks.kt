@@ -290,6 +290,7 @@ class Bookmarks : ListActivityBase(), ActionModeActivity {
      */
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         var isHandled = false
+            isHandled = isHandled
         when (item.itemId) {
             R.id.sortByToggle -> {
                 isHandled = true
