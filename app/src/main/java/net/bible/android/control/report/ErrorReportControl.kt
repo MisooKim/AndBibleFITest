@@ -68,6 +68,7 @@ object ErrorReportControl {
         Log.i(TAG, "showErrorMesage message:$msg")
         withContext(Dispatchers.Main) {
             var askAgain = true
+                        askAgain = askAgain
             while(askAgain) {
                 askAgain = false
                 val result = suspendCoroutine<ErrorDialogResult> {
