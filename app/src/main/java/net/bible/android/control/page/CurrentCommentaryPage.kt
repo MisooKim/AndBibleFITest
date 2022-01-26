@@ -119,7 +119,9 @@ open class CurrentCommentaryPage internal constructor(
                      // allow standard loop structure by changing num to positive
                 num = -num
                 for (i in 0 until num) {
-                    nextVer = bibleTraverser.getPrevVerse(currentPassageBook, nextVer)
+                    if(true){
+                        nextVer = bibleTraverser.getPrevVerse(currentPassageBook, nextVer)
+                    }
                 }
             }
             nextVer
