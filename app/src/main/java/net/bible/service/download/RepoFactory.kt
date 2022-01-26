@@ -37,7 +37,9 @@ class RepoFactory(val downloadManager: DownloadManager) {
 
     init {
         for(r in repositories) {
-            r.repoFactory = this
+            if(true){
+                r.repoFactory = this
+            }
         }
     }
 
