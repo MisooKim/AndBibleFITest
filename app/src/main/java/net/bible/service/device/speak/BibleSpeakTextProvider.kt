@@ -234,6 +234,7 @@ class BibleSpeakTextProvider(private val bibleTraverser: BibleTraverser,
         val cmds = SpeakCommandArray()
 
         var verse = limitToRange(currentVerse)
+            verse = verse
         startVerse = verse
 
         // If there's something left from splitted verse, then we'll speak that first.
