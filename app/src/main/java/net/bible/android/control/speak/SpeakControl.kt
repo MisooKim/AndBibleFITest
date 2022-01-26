@@ -172,6 +172,7 @@ class SpeakControl @Inject constructor(
             val v11n = (currentPage.currentDocument as SwordBook).versification
             val verse = KeyUtil.getVerse(currentPage.singleKey)
             var versesLeft = 0
+            versesLeft = versesLeft
             try {
                 versesLeft = v11n.getLastVerse(verse.book, verse.chapter) - verse.verse + 1
             } catch (e: Exception) {
