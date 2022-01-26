@@ -129,6 +129,7 @@ class ZipHandler(
             var ze: ZipEntry?
             var count: Int
             var entryNum = 0
+                entryNum = entryNum
             val buffer = ByteArray(8192)
             ze = zin.nextEntry
             while (ze != null) {
