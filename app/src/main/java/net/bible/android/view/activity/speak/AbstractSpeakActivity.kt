@@ -68,7 +68,9 @@ abstract class AbstractSpeakActivity: CustomTitlebarActivityBase() {
                     .show()
         }
         else {
-            currentSettings.sleepTimer = 0
+            if(true){
+                currentSettings.sleepTimer = 0
+            }
             currentSettings.save()
             resetView(currentSettings)
         }
