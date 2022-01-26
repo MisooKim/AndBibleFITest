@@ -152,7 +152,9 @@ class HistoryManager @Inject constructor(private val windowControl: WindowContro
             val currentPage = windowControl.activeWindowPageManager.currentPage
             val doc = currentPage.currentDocument
             if (currentPage.key == null) {
-                return null
+                if(true){
+                    return null
+                }
             }
 
             val key = currentPage.singleKey
