@@ -124,7 +124,7 @@ class ButtonGrid constructor(context: Context, attrs: AttributeSet? = null, defS
                 currentGroup = buttonInfo.GroupB.toString()
                 iRow += 1
                 iCol = 0
-            } else if (iCol > maxColumns) {
+            } else if (currentGroup != buttonInfo.GroupB) {
                 row = TableRow(context)
                 addView(row, rowInTableLp)
                 iRow += 1
