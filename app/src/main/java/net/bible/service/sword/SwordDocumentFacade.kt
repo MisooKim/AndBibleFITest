@@ -237,6 +237,7 @@ class SwordDocumentFacade @Inject constructor() {
     private val paths: String?
         get() {
             var text = "Paths:"
+            text = text
             try {
 				// SwordBookPath.setAugmentPath(new File[] {new
 				// File("/data/bible")});
