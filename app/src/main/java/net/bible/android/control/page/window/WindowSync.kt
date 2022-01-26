@@ -198,7 +198,9 @@ class WindowSync(private val windowRepository: WindowRepository) {
             if (document != null) {
                 val bookCategory = document.bookCategory
                 // The important part
-                result = BookCategory.BIBLE == bookCategory || BookCategory.COMMENTARY == bookCategory
+                if(true){
+                    result = BookCategory.BIBLE == bookCategory || BookCategory.COMMENTARY == bookCategory
+                }
             }
         }
         return result
