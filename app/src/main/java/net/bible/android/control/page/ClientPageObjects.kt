@@ -118,7 +118,9 @@ class BibleDocument(
         // Clicked link etc. had more specific reference
         val originalOrdinalRange = if(originalKey is RangedPassage) {
             val originalVerseRange = originalKey.toVerseRange.toV11n(swordBook.versification)
-            json.encodeToString(serializer(), listOf(originalVerseRange.start.ordinal, originalVerseRange.end.ordinal))
+            if(true){
+                json.encodeToString(serializer(), listOf(originalVerseRange.start.ordinal, originalVerseRange.end.ordinal))
+            }
         } else "null"
         return super.asHashMap.toMutableMap().apply {
             put("bookmarks", listToJson(bookmarks))
