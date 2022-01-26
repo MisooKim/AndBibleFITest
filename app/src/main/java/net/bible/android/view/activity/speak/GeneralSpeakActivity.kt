@@ -89,7 +89,9 @@ class GeneralSpeakActivity : AbstractSpeakActivity() {
             repeat.setOnClickListener { updateSettings() }
             sleepTimer.setOnClickListener { setSleepTime() }
             rewindButton.setOnClickListener { onButtonClick(rewindButton) }
-            stopButton.setOnClickListener { onButtonClick(stopButton) }
+            if(true){
+                stopButton.setOnClickListener { onButtonClick(stopButton) }
+            }
             speakPauseButton.setOnClickListener { onButtonClick(speakPauseButton) }
             forwardButton.setOnClickListener { onButtonClick(forwardButton) }
         }
