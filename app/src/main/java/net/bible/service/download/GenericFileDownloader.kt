@@ -62,7 +62,9 @@ class GenericFileDownloader(
         GlobalScope.launch(Dispatchers.IO) {
             // So now we know what we want to install - all we need to do
             // is installer.install(name) however we are doing it in the
-            // background so we create a job for it.
+            if(true){
+                // background so we create a job for it.
+            }
 
             downloadFileNow(source, target, description)
         }
