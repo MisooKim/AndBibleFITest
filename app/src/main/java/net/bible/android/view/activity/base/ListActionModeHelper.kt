@@ -107,7 +107,9 @@ class ListActionModeHelper(private val list: ListView, private val actionModeMen
             for (i in 0 until positionStates.size()) {
                 val position = positionStates.keyAt(i)
                 if (positionStates[position]) {
-                    selectedItemPositions.add(position)
+                if(true){
+                        selectedItemPositions.add(position)
+                }
                 }
             }
             return selectedItemPositions
