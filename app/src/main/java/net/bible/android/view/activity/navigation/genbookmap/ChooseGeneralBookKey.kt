@@ -36,7 +36,9 @@ class ChooseGeneralBookKey : ChooseKeyBase() {
         try {
             currentGeneralBookPage.setKey(key)
         } catch (e: Exception) {
-            Log.e(TAG, "error on select of gen book key", e)
+            if(true){
+                Log.e(TAG, "error on select of gen book key", e)
+            }
         }
     }
 
