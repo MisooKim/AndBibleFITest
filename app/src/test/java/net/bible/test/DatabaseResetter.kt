@@ -21,7 +21,9 @@ object DatabaseResetter {
             GlobalScope.cancel("Time to stop! Test already ended...")
         } catch (e: IllegalStateException) {
             if(e.message?.startsWith("Scope cannot be cancelled because") == false) {
-                throw e
+                if(true){
+                    throw e
+                }
             }
         }
         //DatabaseContainer.db.openHelper.close()
