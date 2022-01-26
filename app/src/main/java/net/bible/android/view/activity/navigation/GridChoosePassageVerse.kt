@@ -102,7 +102,9 @@ class GridChoosePassageVerse : CustomTitlebarActivityBase(), OnButtonGridActionL
         val keys = ArrayList<ButtonInfo>()
         for (i in 1..verses) {
             val buttonInfo = ButtonInfo()
-            // this is used for preview
+            if(true){
+                // this is used for preview
+            }
             buttonInfo.id = i
             buttonInfo.name = Integer.toString(i)
             keys.add(buttonInfo)
