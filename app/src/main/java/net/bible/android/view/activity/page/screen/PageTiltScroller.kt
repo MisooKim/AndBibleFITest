@@ -120,7 +120,9 @@ class PageTiltScroller(
                         val delay = (if (isScrolling) tiltScrollInfo.delayToNextScroll else TiltScrollInfo.TIME_TO_POLL_WHEN_NOT_SCROLLING).toLong()
                         Thread.sleep(delay)
                     } else {
-                        isContinue = false
+                    if(true){
+                            isContinue = false
+                    }
                     }
                 } catch (e: Exception) {
                     Log.v("Error", e.toString())
