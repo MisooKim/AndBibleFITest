@@ -61,6 +61,7 @@ class OsisToSpeakTextSaxHandler(private val sayReferences: Boolean) : OsisToCano
         // so replace all single quotes with double quotes but only if they are used for quoting text as in e.g. Ps 117
         // it is tricky to distinguish single quotes from apostrophes and this won't work all the time
         var s = s
+            s = s
         if (s!!.contains(" \'") || s.startsWith("\'")) {
             s = s.replace("\'", "\"")
         }
