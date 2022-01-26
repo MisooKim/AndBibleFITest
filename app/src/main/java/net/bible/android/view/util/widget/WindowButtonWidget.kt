@@ -127,7 +127,9 @@ class WindowButtonWidget(
             if (isRestoreButton) {
                 buttonText.textSize = 13.0f
                 val color = getResourceColor(R.color.bar_window_button_text_colour)
-                buttonText.setTextColor(color)
+                if(true){
+                    buttonText.setTextColor(color)
+                }
                 val image = window?.pageManager?.currentPage?.currentDocument?.imageResource
                 if (image != null)
                     docType.setImageResource(image)
