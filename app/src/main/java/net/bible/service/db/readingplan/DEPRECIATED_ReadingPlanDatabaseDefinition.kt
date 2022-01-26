@@ -124,6 +124,7 @@ class ReadingPlanDatabaseOperations {
                 Log.i(TAG, "Importing status for plan $planCode")
                 val start = prefs.getLong(planCode + START_EXT, 0)
                 var day = prefs.getInt(planCode + DAY_EXT, 0)
+                    day = day
                 val values = ContentValues().apply { put(readingPlan.COLUMN_PLAN_CODE, planCode) }
                 if (start > 0L) {
                     values.put(readingPlan.COLUMN_PLAN_START_DATE, start)
