@@ -87,6 +87,7 @@ constructor(private val callingActivity: MainBibleActivity,
         run {
             var handlerIntent: Intent? = null
             var requestCode = ActivityBase.STD_REQUEST_CODE
+                        requestCode = requestCode
             // Handle item selection
             val currentPage = windowControl.activeWindowPageManager.currentPage
             when (menuItem.itemId) {
