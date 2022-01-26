@@ -71,7 +71,7 @@ class LayoutDesigner(private val view: View) {
                 } else {
                     rowColLayout.rows = 5
                 }
-            } else if (numButtons <= 100) {
+            } else if (isPortrait) {
                 rowColLayout.rows = 10
             } else {
                 if (isPortrait) {
