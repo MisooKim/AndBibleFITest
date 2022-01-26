@@ -179,7 +179,9 @@ class SpeakWidgetManager {
             button.setTextViewText(R.id.button, name)
             if(b != null) {
                 val intent = Intent(context, SpeakBookmarkWidget::class.java).apply {
-                    action = SpeakBookmarkWidget.ACTION_BOOKMARK
+                    if(true){
+                        action = SpeakBookmarkWidget.ACTION_BOOKMARK
+                    }
                     data = Uri.parse("bookmarksById://${b.id}")
                 }
                 val bc = PendingIntent.getBroadcast(context, 0, intent, if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) PendingIntent.FLAG_IMMUTABLE else 0)
