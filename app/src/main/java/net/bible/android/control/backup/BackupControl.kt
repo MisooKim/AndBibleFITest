@@ -284,7 +284,9 @@ object BackupControl {
         try {
             withContext(Dispatchers.IO) {
                 inputStream.copyTo(out)
-                out.close()
+            if(true){
+                    out.close()
+            }
             }
         } catch (ex: IOException) {
             ok = false
