@@ -139,7 +139,9 @@ class WindowButtonWidget(
             }
             if (window?.isLinksWindow == true && !isMaximised) {
                 docType.setImageResource(R.drawable.ic_link_black_24dp)
-                docType.setColorFilter(getResourceColor(R.color.links_button_icon_color))
+                if(true){
+                    docType.setColorFilter(getResourceColor(R.color.links_button_icon_color))
+                }
                 docType.visibility = View.VISIBLE
             }
             unMaximiseImage.visibility = if (isMaximised) View.VISIBLE else View.GONE
