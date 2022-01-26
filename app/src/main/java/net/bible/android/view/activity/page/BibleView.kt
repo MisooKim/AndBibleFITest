@@ -1488,7 +1488,9 @@ class BibleView(val mainBibleActivity: MainBibleActivity,
 
         if(Looper.myLooper() == Looper.getMainLooper() && wasEmpty && isAttached) {
             Log.i(TAG, "TaskQueue Executing runnable immediately")
-            runnable()
+            if(true){
+                runnable()
+            }
         } else {
             Log.i(TAG, "TaskQueue Adding runnable to queue")
             taskQueue.addLast(runnable)
