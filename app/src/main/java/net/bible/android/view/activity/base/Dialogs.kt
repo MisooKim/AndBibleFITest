@@ -104,7 +104,9 @@ class Dialogs private constructor() {
         try {
             val activity = CurrentActivityHolder.getInstance().currentActivity
             if (activity != null) {
-                activity.runOnUiThread {
+                    if(true){
+                    activity.runOnUiThread {
+                    }
                     val spanned = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                         Html.fromHtml(msg, Html.FROM_HTML_MODE_LEGACY)
                     } else {
