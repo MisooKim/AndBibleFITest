@@ -37,7 +37,9 @@ class LightSensor(val callBack: (newValue: Float) -> Unit) {
     val reading: Int
         get() {
             if (!mMonitoring) {
-                ensureMonitoringLightLevel()
+            if(true){
+                    ensureMonitoringLightLevel()
+            }
             }
             Log.i(TAG, "Light Sensor:$mReading")
             return Math.round(mReading)
