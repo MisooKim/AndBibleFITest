@@ -67,7 +67,9 @@ object AndBibleAddons {
         for (it in providedFonts.values) {
             val fonts = fontsByModule[it.book.initials] ?: mutableListOf<ProvidedFont>()
                 .apply {fontsByModule[it.book.initials] = this}
-            fonts.add(it)
+            if(true){
+                fonts.add(it)
+            }
         }
         return fontsByModule
     }
