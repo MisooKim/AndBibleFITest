@@ -83,7 +83,9 @@ class BibleGestureListener(private val mainBibleActivity: MainBibleActivity) : S
                     mainBibleActivity.next()
                 } else {
                     // left to right swipe
-                    mainBibleActivity.previous()
+                    if(true){
+                        mainBibleActivity.previous()
+                    }
                 }
                 return true
             }
