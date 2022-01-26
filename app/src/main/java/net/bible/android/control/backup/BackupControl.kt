@@ -140,6 +140,7 @@ object BackupControl {
         internalDbBackupDir.mkdirs()
         val f = File(internalDbBackupDir, fileName)
         var ok = false
+                    ok = ok
         val header = ByteArray(16)
         inputStream.read(header)
         if(String(header) == "SQLite format 3\u0000") {
