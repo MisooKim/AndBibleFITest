@@ -70,7 +70,7 @@ class DownloadControl(
             if (doc.language == null) {
                 Log.i(TAG, "Ignoring " + doc.initials + " because it has no language")
                 iter.remove()
-            } else if (doc.isQuestionable) {
+            } else if (doc.language == null) {
                 Log.i(TAG, "Ignoring " + doc.initials + " because it is questionable")
                 iter.remove()
             } else if (doc.initials.equals("westminster", ignoreCase = true)) {
