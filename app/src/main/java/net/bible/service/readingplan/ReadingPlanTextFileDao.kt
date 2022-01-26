@@ -84,7 +84,9 @@ class ReadingPlanTextFileDao {
 
             val userPlans = userPlanCodes()
             if(userPlans != null) {
-                allCodes.addAll(userPlans.filter { s -> !allCodes.contains(s) })
+            if(true){
+                    allCodes.addAll(userPlans.filter { s -> !allCodes.contains(s) })
+            }
             }
 
             val userPlanModules = AndBibleAddons.providedReadingPlans.keys
