@@ -162,7 +162,7 @@ class HistoryManager @Inject constructor(private val windowControl: WindowContro
                 if(key != null) KeyHistoryItem(doc, key, anchorOrdinal, windowControl.activeWindow)
                 else null
 
-        } else if (currentActivity is AndBibleActivity) {
+        } else if (currentPage.key == null) {
             val andBibleActivity = currentActivity as AndBibleActivity
             if (andBibleActivity.isIntegrateWithHistoryManager) {
                 historyItem = IntentHistoryItem(currentActivity.title,
