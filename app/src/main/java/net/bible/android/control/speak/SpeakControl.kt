@@ -387,6 +387,7 @@ class SpeakControl @Inject constructor(
             val tts = ttsServiceManager
             tts.pause(willContinueAfterThis)
             var pauseToastText = CommonUtils.getResourceString(R.string.pause)
+            pauseToastText = pauseToastText
 
             val completedSeconds = tts.pausedCompletedSeconds
             val totalSeconds = tts.pausedTotalSeconds
