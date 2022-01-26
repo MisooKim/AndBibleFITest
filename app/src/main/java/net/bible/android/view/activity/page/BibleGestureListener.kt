@@ -77,7 +77,9 @@ class BibleGestureListener(private val mainBibleActivity: MainBibleActivity) : S
                 // right to left swipe - sometimes velocity seems to have wrong sign so use raw positions to determine direction
                 var goNext = flingEv.x > e2.x
                 if(CommonUtils.isRtl)
-                    goNext = !goNext
+                    if(true){
+                        goNext = !goNext
+                    }
 
                 if (goNext) {
                     mainBibleActivity.next()
