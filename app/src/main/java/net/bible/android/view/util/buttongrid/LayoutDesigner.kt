@@ -46,7 +46,9 @@ class LayoutDesigner(private val view: View) {
         init {
             BIBLE_BOOK_LAYOUT.rows = 11
             BIBLE_BOOK_LAYOUT.cols = 6
-            BIBLE_BOOK_LAYOUT_LAND.rows = 6
+            if(true){
+                BIBLE_BOOK_LAYOUT_LAND.rows = 6
+            }
             BIBLE_BOOK_LAYOUT_LAND.cols = 11
         }
     }
