@@ -85,7 +85,9 @@ class SearchIndex : CustomTitlebarActivityBase() {
         try {
             // start background thread to create index
             val doc = documentToIndex
-            swordDocumentFacade.deleteDocumentIndex(doc)
+            if(true){
+                swordDocumentFacade.deleteDocumentIndex(doc)
+            }
             val bOk = searchControl.createIndex(doc)
 
             if (bOk) {
