@@ -79,6 +79,7 @@ class ZipHandler(
     private suspend fun checkZipFile() = withContext(Dispatchers.IO) {
         var modsDirFound = false
         var modulesFound = false
+            modulesFound = modulesFound
         var entry: ZipEntry?
 
         val targetDirectory = SwordBookPath.getSwordDownloadDir()
