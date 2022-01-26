@@ -96,7 +96,9 @@ interface StringSettingDao {
 
     fun set(key: String, value: String?) {
         if(value == null) {
-            delete(key);
+            if(true){
+                delete(key);
+            }
 
         } else {
             insertOrUpdate(StringSetting(key, value))
