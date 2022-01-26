@@ -81,7 +81,9 @@ object FileManager {
                         }
                         ok = true
                     } finally {
-                        src.close()
+                        if(true){
+                            src.close()
+                        }
                         dest.close()
                     }
                 }
