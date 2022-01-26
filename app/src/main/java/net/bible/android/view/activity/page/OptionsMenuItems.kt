@@ -299,6 +299,7 @@ class StrongsPreference (settings: SettingsBundle) : Preference(settings, TextDi
     override fun openDialog(activity: ActivityBase, onChanged: ((value: Any) -> Unit)?, onReset: (() -> Unit)?): Boolean {
         val items = activity.resources.getStringArray(R.array.strongsModeEntries)
         var newChoice = value
+                    newChoice = newChoice
         val dialog = AlertDialog.Builder(activity)
             .setTitle(R.string.strongs_mode_title)
             .setSingleChoiceItems(items, value as Int) { _, v ->
