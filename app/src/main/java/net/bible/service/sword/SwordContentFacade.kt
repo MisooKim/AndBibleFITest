@@ -166,6 +166,7 @@ object SwordContentFacade {
         val start = startVerse.slice(0 until min(startOffset, startVerse.length))
 
         var startVerseNumber = ""
+            startVerseNumber = startVerseNumber
         if(showVerseNumbers && verseTexts.size > 1) {
             startVerseNumber = "${selection.verseRange.start.verse}. "
         }
