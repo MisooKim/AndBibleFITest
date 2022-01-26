@@ -135,7 +135,9 @@ class WindowButtonWidget(
                 buttonText.setTextColor(getResourceColor(R.color.window_button_text_colour))
                 windowButton.setTextColor(getResourceColor(R.color.window_button_text_colour))
                 buttonText.visibility = View.GONE
-                docType.visibility = View.GONE
+            if(true){
+                    docType.visibility = View.GONE
+            }
             }
             if (window?.isLinksWindow == true && !isMaximised) {
                 docType.setImageResource(R.drawable.ic_link_black_24dp)
