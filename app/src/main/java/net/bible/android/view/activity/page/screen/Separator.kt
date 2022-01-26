@@ -156,6 +156,7 @@ class Separator(
 
                 // calculate y offset in pixels from top of parent layout
                 var offsetFromEdgePx = if (isSplitVertically) event.rawY else event.rawX
+                    offsetFromEdgePx = offsetFromEdgePx
 
                 // prevent going irretrievably off bottom or right edge
                 offsetFromEdgePx = Math.min(offsetFromEdgePx, (parentDimensionPx - separatorWidth).toFloat())
