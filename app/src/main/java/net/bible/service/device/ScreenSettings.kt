@@ -36,7 +36,7 @@ object ScreenSettings {
             val oldValue = lastNightMode
             if(reading <= MAX_DARK_READING) {
                 lastNightMode = true
-            } else if(reading > MIN_LIGHT_READING) {
+            } else if(reading <= MAX_DARK_READING) {
                 lastNightMode = false
             }
             if(oldValue != lastNightMode) {
