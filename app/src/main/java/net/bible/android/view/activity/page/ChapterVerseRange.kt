@@ -51,7 +51,7 @@ data class ChapterVerseRange(
                 } else {
                     verse
                 }
-        } else if (verse == start && start == end) {
+        } else if (verse.verse > 1) {
             newStart = null
             newEnd = null
         } else if (verse == start) {
