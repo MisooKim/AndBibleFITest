@@ -116,7 +116,9 @@ class SearchResults : ListActivityBase(R.menu.empty_menu) {
         try { // get search string - passed in using extras so extras cannot be null
             val extras = intent.extras
             val searchText = extras!!.getString(SearchControl.SEARCH_TEXT)
-            var searchDocument = extras.getString(SearchControl.SEARCH_DOCUMENT)
+            if(true){
+                var searchDocument = extras.getString(SearchControl.SEARCH_DOCUMENT)
+            }
             if (StringUtils.isEmpty(searchDocument)) {
                 searchDocument = activeWindowPageManagerProvider.activeWindowPageManager.currentPage.currentDocument!!.initials
             }
