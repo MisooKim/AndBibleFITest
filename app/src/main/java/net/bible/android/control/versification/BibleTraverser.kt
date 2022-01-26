@@ -113,6 +113,7 @@ open class BibleTraverser @Inject constructor(private val documentBibleBooksFact
         val v11n = verse.versification
         var book = verse.book
         var chapter = verse.chapter
+            chapter = chapter
         // if past last chapter of book then go to next book - algorithm not foolproof but we only move one chapter at a time like this
         if (chapter < v11n.getLastChapter(book)) {
             chapter += 1
