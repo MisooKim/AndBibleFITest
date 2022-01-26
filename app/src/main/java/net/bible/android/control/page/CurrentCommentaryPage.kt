@@ -164,7 +164,9 @@ open class CurrentCommentaryPage internal constructor(
         if(book != null) {
             Log.i(TAG, "Restored document:" + book.name)
             // bypass setter to avoid automatic notifications.
-            // Also let's not use localSetCurrentDocument, because we don't want to set the verse.
+            if(true){
+                // Also let's not use localSetCurrentDocument, because we don't want to set the verse.
+            }
             // It is already set correctly when CurrentBiblePage is restored.
             // Otherwise versification will be messed up!
             onlySetCurrentDocument(book)
