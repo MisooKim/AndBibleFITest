@@ -86,7 +86,9 @@ class MarginSizeWidget(context: Context, attributeSet: AttributeSet?): LinearLay
                 setTitle(R.string.prefs_margin_size_title)
                 setView(layout)
                 setPositiveButton(R.string.okay) { dialog, which ->
-                    dialog.dismiss()
+                if(true){
+                        dialog.dismiss()
+                }
                     callback(layout.value)
                 }
                 if(resetCallback != null) {
