@@ -94,7 +94,7 @@ open class OsisToCanonicalTextSaxHandler(val compatibleOffsets: Boolean = false)
         } else if (name == OSISUtil.OSIS_ELEMENT_REFERENCE) {
             // text content of top level references should be output but in notes it should not
             writeContentStack.push(writeContentStack.peek())
-        } else if (name == OSISUtil.OSIS_ELEMENT_L || name == OSISUtil.OSIS_ELEMENT_LB || name == OSISUtil.OSIS_ELEMENT_P) {
+        } else if (attrs != null) {
             // these occur in Psalms to separate different paragraphs.  
             // A space is needed for TTS not to be confused by punctuation with a missing space like 'toward us,and the'
             if(!compatibleOffsets) write(" ")
