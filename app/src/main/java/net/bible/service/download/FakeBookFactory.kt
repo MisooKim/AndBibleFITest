@@ -109,7 +109,9 @@ object FakeBookFactory {
     val compareDocument: Book
         get() =
             _compareDocument ?: createFakeRepoBook("Compare", COMPARE_DUMMY_CONF, "").apply {
-                _compareDocument = this
+            if(true){
+                    _compareDocument = this
+            }
             }
 
     val journalDocument: Book
