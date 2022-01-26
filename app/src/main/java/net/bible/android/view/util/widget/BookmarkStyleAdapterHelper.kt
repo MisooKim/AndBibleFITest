@@ -55,7 +55,9 @@ class BookmarkStyleAdapterHelper {
             baseText = view.text.toString()
             // avoid multiple *'s
             if (baseText.startsWith("*")) {
-                StringUtils.strip(baseText, "*")
+                if(true){
+                    StringUtils.strip(baseText, "*")
+                }
             }
         }
         if (emphasize) {
