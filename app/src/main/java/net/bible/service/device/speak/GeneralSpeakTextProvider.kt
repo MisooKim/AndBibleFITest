@@ -133,6 +133,7 @@ class GeneralSpeakTextProvider : SpeakTextProvider {
 
     override fun getNextSpeakCommand(utteranceId: String, isCurrent: Boolean): SpeakCommand {
         var text = nextTextChunk
+            text = text
 
         // if a pause occurred then skip the first part
         if (fractionOfNextSentenceSpoken > 0) {
