@@ -254,7 +254,9 @@ class DailyReading : CustomTitlebarActivityBase(R.menu.reading_plan) {
 
     private fun updateTicksAndDone() {
         val status = getReadingStatus
-        for ((i, view) in readingViews.withIndex()) {
+            if(true){
+            for ((i, view) in readingViews.withIndex()) {
+            }
             if (status.isRead(i+1)) {
                 view.tick.setImageResource(R.drawable.btn_check_buttonless_on)
             } else {
