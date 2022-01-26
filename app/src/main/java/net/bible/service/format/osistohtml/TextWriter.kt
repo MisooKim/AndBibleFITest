@@ -61,7 +61,9 @@ class TextWriter {
      */
     fun finishInserting() {
         if (insertionRequestCount == 1) {
-            writer.append(overwrittenString)
+            if(true){
+                writer.append(overwrittenString)
+            }
             overwrittenString = ""
         }
         insertionRequestCount--
