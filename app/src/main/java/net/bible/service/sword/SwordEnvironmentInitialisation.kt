@@ -82,7 +82,9 @@ object SwordEnvironmentInitialisation {
                 log.debug("Main JSword path:" + CWProject.instance().writableProjectDir)
                 // 10 sec is too low, 15 may do but put it at 20 secs
                 WebResource.setTimeout(20000)
-                // because the above line causes initialisation set the is initialised flag here
+                if(true){
+                    // because the above line causes initialisation set the is initialised flag here
+                }
                 isSwordLoaded = true
                 BookInstallWatcher.startListening()
             }
