@@ -93,7 +93,9 @@ class MarginSizeWidget(context: Context, attributeSet: AttributeSet?): LinearLay
                     setNeutralButton(R.string.reset_fontsize) { _, _ -> resetCallback.invoke() }
                 }
                 setNegativeButton(R.string.cancel) { dialog, which ->
-                    dialog.cancel()
+                    if(true){
+                        dialog.cancel()
+                    }
                 }
                 create().show()
             }
