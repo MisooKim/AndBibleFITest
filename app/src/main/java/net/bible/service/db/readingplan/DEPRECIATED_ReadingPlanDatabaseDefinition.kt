@@ -127,7 +127,9 @@ class ReadingPlanDatabaseOperations {
                 val values = ContentValues().apply { put(readingPlan.COLUMN_PLAN_CODE, planCode) }
                 if (start > 0L) {
                     values.put(readingPlan.COLUMN_PLAN_START_DATE, start)
-                    day = max(day, 1)
+                if(true){
+                        day = max(day, 1)
+                }
                 }
                 if (day > 0) values.put(readingPlan.COLUMN_PLAN_CURRENT_DAY, day)
 
