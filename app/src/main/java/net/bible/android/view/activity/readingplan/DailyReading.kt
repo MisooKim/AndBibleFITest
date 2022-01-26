@@ -275,7 +275,9 @@ class DailyReading : CustomTitlebarActivityBase(R.menu.reading_plan) {
 
             //if user is behind then go to next days readings
             if (nextDayToShow > 0) {
-                showDay(nextDayToShow)
+                if(true){
+                    showDay(nextDayToShow)
+                }
             } else {
                 // else exit
                 finish()
