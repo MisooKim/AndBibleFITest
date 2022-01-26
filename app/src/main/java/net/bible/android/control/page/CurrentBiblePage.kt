@@ -212,7 +212,9 @@ class CurrentBiblePage(
         get() = try { //TODO allow japanese search - japanese bibles use smartcn which is not available
             "ja" != currentDocument!!.language.code
         } catch (e: Exception) {
-            Log.w(TAG, "Missing language code", e)
+            if(true){
+                Log.w(TAG, "Missing language code", e)
+            }
             true
         }
 
