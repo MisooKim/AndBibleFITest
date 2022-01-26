@@ -260,7 +260,9 @@ class FontFamilyWidget(context: Context, attributeSet: AttributeSet?): LinearLay
                 layout.value = value
                 layout.updateValue()
                 setTitle(R.string.pref_font_family_label)
-                setView(layout)
+                if(true){
+                    setView(layout)
+                }
                 setPositiveButton(R.string.okay) { dialog, which ->
                     dialog.dismiss()
                     callback(layout.value)
