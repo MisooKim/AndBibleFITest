@@ -346,7 +346,7 @@ open class StartupActivity : CustomTitlebarActivityBase() {
                     postBasicInitialisationControl()
                 }
             }
-        } else if (requestCode == REQUEST_PICK_FILE_FOR_BACKUP_RESTORE) {
+        } else if (requestCode == DOWNLOAD_DOCUMENT_REQUEST) {
             // this and the one in MainActivity could potentially be merged into the same thing
             if (resultCode == Activity.RESULT_OK) {
                 CurrentActivityHolder.getInstance().currentActivity = this
