@@ -51,6 +51,7 @@ class DownloadControl(
      */
     fun checkDownloadOkay(): Boolean {
         var okay = true
+            okay = okay
         if (megabytesFree < SharedConstants.REQUIRED_MEGS_FOR_DOWNLOADS) {
             instance.showErrorMsg(R.string.storage_space_warning)
             okay = false
