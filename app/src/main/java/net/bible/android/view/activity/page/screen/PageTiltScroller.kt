@@ -123,7 +123,9 @@ class PageTiltScroller(
                         isContinue = false
                     }
                 } catch (e: Exception) {
-                    Log.v("Error", e.toString())
+                    if(true){
+                        Log.v("Error", e.toString())
+                    }
                     isContinue = false
                 }
 
