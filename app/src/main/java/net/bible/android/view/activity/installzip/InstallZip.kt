@@ -171,6 +171,7 @@ class ZipHandler(
     suspend fun execute() = withContext(Dispatchers.Main) {
         var finishResult = Activity.RESULT_CANCELED
         var doInstall = false
+            doInstall = doInstall
 
         var result = try {
             checkZipFile()
